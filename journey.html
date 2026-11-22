@@ -1,1 +1,85 @@
-hello
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Journey | Athar</title>
+  <link rel="stylesheet" href="css/journey.css">
+</head>
+<body>
+  <nav class="nav" aria-label="Main">
+    <a class="brand" href="index.html">Athar</a>
+    <a class="link" href="index.html">Home</a>
+    <a class="link" href="money.html">Money</a>
+    <a class="link" href="items.html">Items</a>
+    <a class="link" href="volunteer.html">Volunteer</a>
+    <a class="link" href="causes.html">Causes</a>
+    <a class="link" href="safe-giving.html">Safe Giving</a>
+    <a class="link" href="game.html">Real or Scam?</a>
+    <a class="link current" href="journey.html">My Journey</a>
+    <a class="link" href="about.html">About</a>
+    <span class="chip" id="athar-level" aria-label="Your level"></span>
+  </nav>
+
+  <main>
+    <h1>My Journey</h1>
+    <p class="lead">Your points, badges and small acts, all saved in this browser. Points reward learning and taking action, never how much money you give.</p>
+
+    <section class="card" aria-labelledby="lvl-h">
+      <h2 id="lvl-h">Level</h2>
+      <div class="level-top">
+        <span class="level-name" id="level-name">Seed</span>
+        <span id="points-text" class="small"></span>
+      </div>
+      <div class="bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" id="level-bar"><span id="level-fill"></span></div>
+      <p class="small" id="next-text"></p>
+    </section>
+
+    <section class="card" aria-labelledby="badge-h">
+      <h2 id="badge-h">Badges</h2>
+      <ul class="badges" id="badge-list"></ul>
+    </section>
+
+    <section class="card" aria-labelledby="chal-h">
+      <h2 id="chal-h">7-day Small Acts challenge</h2>
+      <p class="small">Tick one small act each day. Each day is worth 10 points.</p>
+      <p class="streak" id="streak-text"></p>
+      <ul class="days" id="day-list"></ul>
+      <p class="note" id="week-done" hidden>You finished the whole week. Thank you for your small acts.</p>
+    </section>
+
+    <section class="card" aria-labelledby="log-h">
+      <h2 id="log-h">My giving log</h2>
+      <p class="note">Everything here is self-reported by you. It is not checked or verified by Athar or any organisation.</p>
+      <div class="totals" aria-live="polite">
+        <div><span class="num" id="tot-hours">0</span>volunteer hours</div>
+        <div><span class="num" id="tot-items">0</span>items given</div>
+        <div><span class="num" id="tot-acts">0</span>small acts</div>
+      </div>
+      <form class="log" id="log-form" novalidate>
+        <label class="field">What did you do?
+          <select id="log-type">
+            <option value="hours">Volunteer hours</option>
+            <option value="items">Items given</option>
+            <option value="acts">Small acts</option>
+          </select>
+        </label>
+        <label class="field">How many?
+          <input type="number" id="log-amount" min="1" max="999" step="1" inputmode="numeric" required>
+        </label>
+        <label class="field">Note (optional)
+          <input type="text" id="log-note" maxlength="60" placeholder="e.g. beach clean-up">
+        </label>
+        <button class="btn" type="submit">Add to log</button>
+      </form>
+      <p class="error" id="log-error" role="alert"></p>
+      <ul class="entries" id="entry-list"></ul>
+    </section>
+
+    <p><button class="btn outline small" id="reset-btn" type="button">Reset my journey</button></p>
+  </main>
+
+  <script src="js/athar.js"></script>
+  <script src="js/journey.js"></script>
+</body>
+</html>
