@@ -77,7 +77,7 @@ Each member ticks their own boxes.
 - [x] Points, levels and badges (`js/athar.js`)
 - [x] "Real or Scam?" game (`game.html`)
 - [x] My Journey page: level, badges, 7-day challenge, giving log
-- [ ] Tested on phone and laptop
+- [X] Tested on phone and laptop
 
 ### Member 3: [Tala]
 - [ ] Volunteer page
