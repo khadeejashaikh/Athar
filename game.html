@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Real or Scam? | Athar</title>
+  <link rel="stylesheet" href="css/journey.css">
+</head>
+<body>
+  <nav class="nav" aria-label="Main">
+    <a class="brand" href="index.html">Athar</a>
+    <a class="link" href="index.html">Home</a>
+    <a class="link" href="money.html">Money</a>
+    <a class="link" href="items.html">Items</a>
+    <a class="link" href="volunteer.html">Volunteer</a>
+    <a class="link" href="causes.html">Causes</a>
+    <a class="link" href="safe-giving.html">Safe Giving</a>
+    <a class="link current" href="game.html">Real or Scam?</a>
+    <a class="link" href="journey.html">My Journey</a>
+    <a class="link" href="about.html">About</a>
+    <span class="chip" id="athar-level" aria-label="Your level"></span>
+  </nav>
+
+  <main>
+    <h1>Real or Scam?</h1>
+    <p class="lead">Read each message and decide if it looks real or suspicious. You earn 5 points the first time you get each one right. Score 6 or more for the Scam Spotter badge.</p>
+
+    <section id="play-area" class="game-card" aria-live="polite">
+      <p class="small" id="progress-text"></p>
+      <p class="kind" id="card-kind"></p>
+      <p class="msg" id="card-text"></p>
+      <div class="answers">
+        <button class="btn" id="btn-real" type="button">Looks real</button>
+        <button class="btn outline" id="btn-scam" type="button">Looks suspicious</button>
+      </div>
+      <div id="feedback" class="feedback" hidden></div>
+      <button class="btn" id="btn-next" type="button" hidden>Next message</button>
+    </section>
+
+    <section id="end-area" class="game-card" hidden>
+      <h2>Round finished</h2>
+      <p id="result-text"></p>
+      <button class="btn" id="btn-again" type="button">Play again</button>
+      <a class="btn outline" style="text-decoration:none;display:inline-block;margin-left:.5rem" href="journey.html">See my journey</a>
+    </section>
+
+    <p class="note" style="margin-top:1.5rem">All messages here are made up for learning. Always confirm details on an organisation's own website. Athar does not collect donations.</p>
+  </main>
+
+  <script src="js/athar.js"></script>
+  <script src="js/game.js"></script>
+</body>
+</html>
