@@ -88,12 +88,12 @@ Each member ticks their own boxes.
 - [ ] Tested on phone and laptop
 
 ### Member 4: [Mahra]
-- [ ] Money Donations page with official links
-- [ ] Donate Items page and checklist builder
-- [ ] Safe Giving page (tips, link to `game.html`)
-- [ ] About page and feedback form with validation
-- [ ] Points connected (`markExplored`)
-- [ ] Tested on phone and laptop
+- [x] Money Donations page with official links
+- [x] Donate Items page and checklist builder
+- [x] Safe Giving page (tips, link to `game.html`)
+- [x] About page and feedback form with validation
+- [x] Points connected (`markExplored`)
+- [x] Tested on phone and laptop
 
 ### Whole team
 - [ ] All navigation links work
