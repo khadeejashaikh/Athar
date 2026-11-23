@@ -3,315 +3,337 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <meta name="description" content="ATHAR helps people discover safe, purposeful ways to give across the UAE.">
-
+    <meta name="description"
+        content="ATHAR helps people discover safe, purposeful ways to give across the UAE.">
     <title>ATHAR | Give With Purpose</title>
 
-    <link rel="stylesheet" href="s.css">
+  
+    <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
-
 <div class="app">
 
-    <!-- header -->
+
     <header class="site-header">
         <div class="header-inner">
-
-            <a class="logo" href="#home" aria-label="Athar home">
-                <img src="logo.png" alt="ATHAR - Give With Purpose">
+            <a class="logo" href="index.html" aria-label="Athar home">
+                <img
+                    src="images/logo.png"
+                    alt="ATHAR - Give With Purpose">
             </a>
 
-            <nav id="main-nav" aria-label="Main navigation">
-                <a class="active" href="#home">Home</a>
-                <a href="#money">Money</a>
-                <a href="#items">Items</a>
-                <a href="#volunteer">Volunteer</a>
-                <a href="#causes">Find a Cause</a>
-                <a href="#safe">Safe Giving</a>
-                <a href="#journey">My Journey</a>
-                <a href="#about">About</a>
+            <nav
+                class="nav"
+                id="main-nav"
+                aria-label="Main">
+                <a class="link current" href="index.html">Home</a>
+                <a class="link" href="money.html">Money </a>
+                <a class="link" href="items.html">Items </a>
+                <a class="link" href="volunteer.html">Volunteer </a>
+                <a class="link" href="causes.html">Causes </a>
+                <a class="link" href="safe-giving.html"> Safe Giving </a>
+                <a class="link" href="game.html">Real or Scam? </a>
+                <a class="link" href="journey.html"> My Journey</a>
+                <a class="link" href="about.html">About </a>
             </nav>
 
+            <!-- this shows the current level and points of the user so they can see their progress while using athar -->
             <div class="user-nav">
                 <div class="level-pill">
-                    <span id="level-label">LEVEL 1 · SEED</span>
-                    <b id="header-points">0 POINTS</b>
+                    <span id="level-label">
+                        LEVEL 1 · SEED
+                    </span>
+                    <b id="header-points">
+                        0 POINTS
+                    </b>
                 </div>
-
-                <button class="avatar" type="button" aria-label="Open my journey">
-                    M
-                </button>
             </div>
 
-            <button id="menu-button" class="menu-button" type="button"
-                aria-label="Toggle menu" aria-expanded="false">
+
+            <button
+                id="menu-button"
+                class="menu-button"
+                type="button"
+                aria-label="Toggle menu"
+                aria-expanded="false">
                 <span data-icon="menu"></span>
             </button>
-
         </div>
     </header>
 
-
-    <!-- hero section -->
+    <!-- the hero section is the first large section the user sees when they open the athar home page -->
     <section id="home" class="page-hero">
-
         <div class="hero-orbit orbit-one"></div>
         <div class="hero-orbit orbit-two"></div>
 
         <div class="hero-content">
-
             <div class="eyebrow">
                 <span></span>
                 ATHAR · GIVE WITH PURPOSE
             </div>
 
-            <h1>Small acts<br>Shared impact</h1>
+            <h1>
+                Small acts<br>
+                Shared impact
+            </h1>
 
             <p id="hero-copy">
                 Find a meaningful way to give back to your community,
                 and watch your journey grow.
             </p>
 
+            
             <div class="button-row">
-
-                <button class="btn" id="open-quiz" type="button">
+                <button
+                    class="btn"
+                    id="open-quiz"
+                    type="button">
                     Take the Giver Quiz
                     <span data-icon="arrow"></span>
                 </button>
 
-                <a class="btn btn-secondary" href="#featured-causes">
+                <a
+                    class="btn btn-secondary"
+                    href="causes.html">
                     Explore Ways to Give
                     <span data-icon="arrow"></span>
                 </a>
-
             </div>
-
         </div>
 
-        <!-- donation image -->
         <div class="hero-image">
-            <img src="donation.png"
+            <img
+                src="images/donation.png"
                 alt="Donation box representing humanitarian giving in the UAE">
         </div>
-
     </section>
 
-
-    <!-- main content -->
     <main>
 
-        <!-- ways to give -->
-        <section class="giving-grid" aria-label="Ways to give">
+        <section
+            class="giving-grid"
+            aria-label="Ways to give">
 
             <article class="giving-card">
-
-                <div class="number">01</div>
+                <div class="number">
+                    01
+                </div>
 
                 <div class="round-icon">
                     <span data-icon="coin"></span>
                 </div>
 
-                <h3>DONATE MONEY</h3>
+                <h3>
+                    DONATE MONEY
+                </h3>
 
                 <p>
                     Find official giving channels and learn how to choose a cause.
                 </p>
 
-                <a href="#money">
+                <a href="money.html">
                     Explore Money Giving
                     <span data-icon="arrow"></span>
                 </a>
-
             </article>
 
-
             <article class="giving-card">
-
-                <div class="number">02</div>
+                <div class="number">
+                    02
+                </div>
 
                 <div class="round-icon">
                     <span data-icon="box"></span>
                 </div>
 
-                <h3>DONATE ITEMS</h3>
+                <h3>
+                    DONATE ITEMS
+                </h3>
 
                 <p>
                     Turn useful items into meaningful contributions.
                 </p>
 
-                <a href="#items">
+                <a href="items.html">
                     Build a Checklist
                     <span data-icon="arrow"></span>
                 </a>
-
             </article>
 
-
             <article class="giving-card">
-
-                <div class="number">03</div>
+                <div class="number">
+                    03
+                </div>
 
                 <div class="round-icon">
                     <span data-icon="hands"></span>
                 </div>
 
-                <h3>VOLUNTEER</h3>
+                <h3>
+                    VOLUNTEER
+                </h3>
 
                 <p>
                     Find ways to give your time and skills.
                 </p>
 
-                <a href="#volunteer">
+                <a href="volunteer.html">
                     Find Opportunities
                     <span data-icon="arrow"></span>
                 </a>
-
             </article>
-
         </section>
 
-
-        <!-- featured causes -->
-        <section id="featured-causes" class="section">
+        <!-- this section shows some of the causes that users can explore before going to the full causes page -->
+        <section
+            id="featured-causes"
+            class="section">
 
             <div class="section-title">
-
                 <div>
+                    <span>
+                        DISCOVER
+                    </span>
 
-                    <span>DISCOVER</span>
-
-                    <h2>Featured causes</h2>
+                    <h2>
+                        Featured causes
+                    </h2>
 
                     <p>
                         Start with what matters to you. Every cause has a place
                         for your time, attention, or support.
                     </p>
-
                 </div>
 
-                <a class="btn btn-secondary btn-small" href="#causes">
+                <a
+                    class="btn btn-secondary btn-small"
+                    href="causes.html">
                     View all causes
                     <span data-icon="arrow"></span>
                 </a>
-
             </div>
 
-
+ <!-- each card represents a different cause and the explore buttons can be connected to the javascript to provide more information to the user -->
             <div class="cause-grid">
 
                 <article class="cause-card">
-
                     <div class="cause-icon gold">
                         <span data-icon="book"></span>
                     </div>
 
-                    <h3>Education</h3>
+                    <h3>
+                        Education
+                    </h3>
 
                     <p>
                         Help learners gain the tools, confidence, and access to thrive.
                     </p>
 
-                    <button type="button" class="explore-cause" data-cause="education">
+                    <button
+                        type="button"
+                        class="explore-cause">
                         Explore
                         <span data-icon="arrow"></span>
                     </button>
-
                 </article>
 
-
                 <article class="cause-card">
-
                     <div class="cause-icon rose">
                         <span data-icon="heart"></span>
                     </div>
 
-                    <h3>Healthcare</h3>
+                    <h3>
+                        Healthcare
+                    </h3>
 
                     <p>
                         Support healthier lives and essential community care.
                     </p>
 
-                    <button type="button" class="explore-cause" data-cause="healthcare">
+                    <button
+                        type="button"
+                        class="explore-cause">
                         Explore
                         <span data-icon="arrow"></span>
                     </button>
-
                 </article>
 
-
                 <article class="cause-card">
-
                     <div class="cause-icon green">
                         <span data-icon="hands"></span>
                     </div>
 
-                    <h3>Humanitarian Aid</h3>
+                    <h3>
+                        Humanitarian Aid
+                    </h3>
 
                     <p>
                         Discover trusted pathways for relief and emergency support.
                     </p>
 
-                    <button type="button" class="explore-cause" data-cause="humanitarian">
+                    <button
+                        type="button"
+                        class="explore-cause">
                         Explore
                         <span data-icon="arrow"></span>
                     </button>
-
                 </article>
 
-
                 <article class="cause-card">
-
                     <div class="cause-icon mint">
                         <span data-icon="leaf"></span>
                     </div>
 
-                    <h3>Environment</h3>
+                    <h3>
+                        Environment
+                    </h3>
 
                     <p>
                         Protect local places through practical, positive action.
                     </p>
 
-                    <button type="button" class="explore-cause" data-cause="environment">
+                    <button
+                        type="button"
+                        class="explore-cause">
                         Explore
                         <span data-icon="arrow"></span>
                     </button>
-
                 </article>
 
-
                 <article class="cause-card">
-
                     <div class="cause-icon blue">
                         <span data-icon="people"></span>
                     </div>
 
-                    <h3>Community</h3>
+                    <h3>
+                        Community
+                    </h3>
 
                     <p>
                         Strengthen the connections that help neighborhoods flourish.
                     </p>
 
-                    <button type="button" class="explore-cause" data-cause="community">
+                    <button
+                        type="button"
+                        class="explore-cause">
                         Explore
                         <span data-icon="arrow"></span>
                     </button>
-
                 </article>
-
             </div>
-
         </section>
 
+ <!-- this profile section allows the user to enter a few basic preferences so the website can make the experience feel  more personal without requiring an account -->
+        <section
+            class="section"
+            id="profile-section">
 
-        <!-- profile -->
-        <section class="section" id="profile-section">
-
-            <article class="profile-setup" id="profile-setup">
+            <article
+                class="profile-setup"
+                id="profile-setup">
 
                 <div class="profile-copy">
-
                     <span class="tiny-label">
                         MAKE ATHAR YOURS
                     </span>
@@ -326,86 +348,107 @@
                         on this device.
                     </p>
 
+  <!-- this privacy message explains to the user that the information is saved locally instead of being collected as part of the website -->
                     <div class="privacy">
-
                         <span data-icon="shield"></span>
 
                         <span>
                             Private by design<br>
-                            <small>Saved only in your browser</small>
+                            <small>
+                                Saved only in your browser
+                            </small>
                         </span>
-
                     </div>
-
                 </div>
 
-
+                <!-- this form collects the basic profile information that is needed by the javascript for the user's journey -->
                 <form id="profile-form">
 
                     <label>
                         Your first name
-
-                        <input id="profile-name" type="text"
-                            placeholder="e.g. Maryam" required>
+                        <input
+                            id="profile-name"
+                            type="text"
+                            placeholder="e.g. Maryam"
+                            required>
                     </label>
-
 
                     <div class="form-row">
 
                         <label>
                             Main interest
-
                             <select id="profile-interest">
-                                <option>Education</option>
-                                <option>Healthcare</option>
-                                <option>Environment</option>
-                                <option>Community</option>
+                                <option>
+                                    Education
+                                </option>
+                                <option>
+                                    Healthcare
+                                </option>
+                                <option>
+                                    Environment
+                                </option>
+                                <option>
+                                    Community
+                                </option>
                             </select>
                         </label>
-
 
                         <label>
                             Your emirate
-
                             <select id="profile-emirate">
-                                <option>Dubai</option>
-                                <option>Abu Dhabi</option>
-                                <option>Sharjah</option>
-                                <option>Ajman</option>
-                                <option>Fujairah</option>
+                                <option>
+                                    Dubai
+                                </option>
+                                <option>
+                                    Abu Dhabi
+                                </option>
+                                <option>
+                                    Sharjah
+                                </option>
+                                <option>
+                                    Ajman
+                                </option>
+                                <option>
+                                    Fujairah
+                                </option>
                             </select>
                         </label>
-
                     </div>
-
 
                     <label>
                         Free time per week
-
                         <select id="profile-time">
-                            <option>Less than 1 hour</option>
-                            <option>1–2 hours</option>
-                            <option>3–5 hours</option>
-                            <option>5+ hours</option>
+                            <option>
+                                Less than 1 hour
+                            </option>
+                            <option>
+                                1–2 hours
+                            </option>
+                            <option>
+                                3–5 hours
+                            </option>
+                            <option>
+                                5+ hours
+                            </option>
                         </select>
                     </label>
 
-
-                    <button class="btn" type="submit">
+                    <button
+                        class="btn"
+                        type="submit">
                         Create my profile
                         <span data-icon="arrow"></span>
                     </button>
-
                 </form>
-
             </article>
 
-
-            <!-- journey card -->
-            <article class="journey-card" id="journey-card" hidden>
+  <!-- this card is hidden at first and is shown after the profile is created so the user can see their journey,level, points, and progress -->
+            <article
+                class="journey-card"
+                id="journey-card"
+                hidden>
 
                 <div>
-
                     <span class="tiny-label light">
                         YOUR ATHAR JOURNEY
                     </span>
@@ -418,18 +461,21 @@
                         Your impact is made of every thoughtful choice.
                     </p>
 
-                    <button class="btn btn-secondary" type="button">
+                    <a
+                        class="btn btn-secondary"
+                        href="journey.html">
                         Continue Your Journey
                         <span data-icon="arrow"></span>
-                    </button>
-
+                    </a>
                 </div>
-
 
                 <div class="journey-stats">
 
                     <div class="level-symbol">
-                        <span data-icon="leaf" data-size="40"></span>
+                        <span
+                            data-icon="leaf"
+                            data-size="40">
+                        </span>
                     </div>
 
                     <h3 id="journey-level">
@@ -445,85 +491,87 @@
                     </div>
 
                     <div class="stat-row">
-
                         <span>
-                            <b>3</b>
-                            day streak
+                            <b>3</b> day streak
                         </span>
 
                         <span>
-                            <b>1</b>
-                            recent badge
+                            <b>1</b> recent badge
                         </span>
-
                     </div>
-
                 </div>
-
             </article>
-
         </section>
-
     </main>
 
-
-    <!-- footer -->
+    <!-- this is the footer that appears at the bottom of the page and contains extra navigation links and a short description -->
     <footer>
 
         <div class="footer-main">
 
             <div>
-
-                <a class="logo logo-light" href="#home">
-                    <img src="logo.png" alt="ATHAR - Give With Purpose">
+                <a
+                    class="logo logo-light"
+                    href="index.html">
+                    <img
+                        src="logo.png"
+                        alt="ATHAR - Give With Purpose">
                 </a>
 
                 <p>
                     Helping people across the UAE discover safe,
                     purposeful ways to give.
                 </p>
-
             </div>
-
 
             <div>
+                <h4>
+                    EXPLORE
+                </h4>
 
-                <h4>EXPLORE</h4>
+                <a href="causes.html">
+                    Find a cause
+                </a>
 
-                <a href="#causes">Find a cause</a>
-                <a href="#volunteer">Volunteer</a>
-                <a href="#money">Money giving</a>
+                <a href="volunteer.html">
+                    Volunteer
+                </a>
 
+                <a href="money.html">
+                    Money giving
+                </a>
             </div>
-
 
             <div>
+                <h4>
+                    LEARN
+                </h4>
 
-                <h4>LEARN</h4>
+                <a href="safe-giving.html">
+                    Safe giving
+                </a>
 
-                <a href="#safe">Safe giving</a>
-                <a href="#about">About Athar</a>
-                <a href="#journey">My journey</a>
+                <a href="about.html">
+                    About Athar
+                </a>
 
+                <a href="journey.html">
+                    My journey
+                </a>
             </div>
 
-
+ <!-- this note is included to make it clear that athar is an educational directory and does not directly handle donations or financial transactions -->
             <div class="footer-note">
-
                 <span data-icon="shield"></span>
 
                 <p>
                     Athar is an educational directory.
                     We do not collect or process donations.
                 </p>
-
             </div>
-
         </div>
 
-
         <div class="footer-bottom">
-
             <span>
                 © 2026 ATHAR
             </span>
@@ -531,51 +579,47 @@
             <span>
                 Made with purpose in the UAE
             </span>
-
         </div>
-
     </footer>
-
 </div>
 
+<!-- this is the quiz popup. it stays hidden until the user clicks the giver quiz button, and the javascript fills its content -->
+<div
+    class="quiz-overlay"
+    id="quiz-overlay"
+    hidden>
 
-<!-- quiz -->
-<div class="quiz-overlay" id="quiz-overlay" hidden>
-
-    <div class="quiz-modal"
+    <div
+        class="quiz-modal"
         role="dialog"
         aria-modal="true"
         aria-labelledby="quiz-title">
 
-        <button class="modal-close"
+        <button
+            class="modal-close"
             id="close-quiz"
             type="button"
             aria-label="Close quiz">
-
             <span data-icon="close"></span>
-
         </button>
 
         <div id="quiz-content"></div>
-
     </div>
-
 </div>
 
-
-<!-- toast message -->
-<div class="toast" id="toast" hidden>
+<!-- this small toast message is used by the javascript to show short messages to the user without changing the page layout -->
+<div
+    class="toast"
+    id="toast"
+    hidden>
 
     <span data-icon="leaf"></span>
-
     <span id="toast-message"></span>
-
 </div>
 
-
-<!-- shared javascript comes first because quiz.js uses it -->
-<script src="ATHER.js"></script>
-<script src="quiz.js"></script>
+<!-- these javascript files handle the interactive parts of the page including the icons, quiz, profile, points, menu, and other actions -->
+<script src="ather.js"></script>
+<script src="main.js"></script>
 
 </body>
 </html>
