@@ -1,1 +1,589 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <meta name="description" content="ATHAR helps people discover safe, purposeful ways to give across the UAE.">
+
+    <title>ATHAR | Give With Purpose</title>
+
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <!-- header -->
+    <header class="site-header">
+        <div class="header-inner">
+
+            <a class="logo" href="#home" aria-label="Athar home">
+              <img src="logo.png" alt="ATHAR - Give With Purpose">
+            </a>
+
+            <nav id="main-nav" aria-label="Main navigation">
+                <a class="active" href="#home">Home</a>
+                <a href="#money">Money</a>
+                <a href="#items">Items</a>
+                <a href="#volunteer">Volunteer</a>
+                <a href="#causes">Find a Cause</a>
+                <a href="#safe">Safe Giving</a>
+                <a href="#journey">My Journey</a>
+                <a href="#about">About</a>
+            </nav>
+
+            <div class="user-nav">
+                <div class="level-pill">
+                    <span id="level-label">LEVEL 1 · SEED</span>
+                    <b id="header-points">25 POINTS</b>
+                </div>
+
+                <button class="avatar" type="button" aria-label="Open my journey">
+                    M
+                </button>
+            </div>
+
+            <button
+                id="menu-button"
+                class="menu-button"
+                type="button"
+                aria-label="Toggle menu"
+                aria-expanded="false">
+                <span data-icon="menu"></span>
+            </button>
+
+        </div>
+    </header>
+
+
+    <!-- page hero -->
+ <section id="home" class="page-hero">
+
+    <div class="hero-orbit orbit-one"></div>
+    <div class="hero-orbit orbit-two"></div>
+
+    <div class="hero-content">
+
+        <div class="eyebrow">
+            <span></span>
+            ATHAR · GIVE WITH PURPOSE
+        </div>
+
+        <h1>Small acts<br>Shared impact</h1>
+
+        <p id="hero-copy">
+            Find a meaningful way to give back to your community,
+            and watch your journey grow.
+        </p>
+
+        <div class="button-row">
+
+            <button class="btn" id="open-quiz" type="button">
+                Take the Giver Quiz
+                <span data-icon="arrow"></span>
+            </button>
+
+            <a class="btn btn-secondary" href="#featured-causes">
+                Explore Ways to Give
+                <span data-icon="arrow"></span>
+            </a>
+
+        </div>
+
+    </div>
+
+    <!-- hero section image -->
+    <div class="hero-image">
+        <img
+            src="donation.png"
+            alt="Donation box representing humanitarian giving in the UAE"
+        >
+    </div>
+
+</section>
+
+
+    <!-- main -->
+    <main>
+
+        <!-- wayes to give -->
+        <section class="giving-grid" aria-label="Ways to give">
+
+            <article class="giving-card">
+
+                <div class="number">01</div>
+
+                <div class="round-icon">
+                    <span data-icon="coin"></span>
+                </div>
+
+                <h3>DONATE MONEY</h3>
+
+                <p>
+                    Find official giving channels and learn how to choose a cause.
+                </p>
+
+                <a href="#money">
+                    Explore Money Giving
+                    <span data-icon="arrow"></span>
+                </a>
+
+            </article>
+
+
+            <article class="giving-card">
+
+                <div class="number">02</div>
+
+                <div class="round-icon">
+                    <span data-icon="box"></span>
+                </div>
+
+                <h3>DONATE ITEMS</h3>
+
+                <p>
+                    Turn useful items into meaningful contributions.
+                </p>
+
+                <a href="#items">
+                    Build a Checklist
+                    <span data-icon="arrow"></span>
+                </a>
+
+            </article>
+
+
+            <article class="giving-card">
+
+                <div class="number">03</div>
+
+                <div class="round-icon">
+                    <span data-icon="hands"></span>
+                </div>
+
+                <h3>VOLUNTEER</h3>
+
+                <p>
+                    Find ways to give your time and skills.
+                </p>
+
+                <a href="#volunteer">
+                    Find Opportunities
+                    <span data-icon="arrow"></span>
+                </a>
+
+            </article>
+
+        </section>
+
+
+        <!-- featured causesS -->
+        <section id="featured-causes" class="section">
+
+            <div class="section-title">
+
+                <div>
+
+                    <span>DISCOVER</span>
+
+                    <h2>Featured causes</h2>
+
+                    <p>
+                        Start with what matters to you. Every cause has a place
+                        for your time, attention, or support.
+                    </p>
+
+                </div>
+
+                <a class="btn btn-secondary btn-small" href="#causes">
+                    View all causes
+                    <span data-icon="arrow"></span>
+                </a>
+
+            </div>
+
+
+            <div class="cause-grid">
+
+                <article class="cause-card">
+
+                    <div class="cause-icon gold">
+                        <span data-icon="book"></span>
+                    </div>
+
+                    <h3>Education</h3>
+
+                    <p>
+                        Help learners gain the tools, confidence, and access to thrive.
+                    </p>
+
+                    <button type="button" class="explore-cause">
+                        Explore
+                        <span data-icon="arrow"></span>
+                    </button>
+
+                </article>
+
+
+                <article class="cause-card">
+
+                    <div class="cause-icon rose">
+                        <span data-icon="heart"></span>
+                    </div>
+
+                    <h3>Healthcare</h3>
+
+                    <p>
+                        Support healthier lives and essential community care.
+                    </p>
+
+                    <button type="button" class="explore-cause">
+                        Explore
+                        <span data-icon="arrow"></span>
+                    </button>
+
+                </article>
+
+
+                <article class="cause-card">
+
+                    <div class="cause-icon green">
+                        <span data-icon="hands"></span>
+                    </div>
+
+                    <h3>Humanitarian Aid</h3>
+
+                    <p>
+                        Discover trusted pathways for relief and emergency support.
+                    </p>
+
+                    <button type="button" class="explore-cause">
+                        Explore
+                        <span data-icon="arrow"></span>
+                    </button>
+
+                </article>
+
+
+                <article class="cause-card">
+
+                    <div class="cause-icon mint">
+                        <span data-icon="leaf"></span>
+                    </div>
+
+                    <h3>Environment</h3>
+
+                    <p>
+                        Protect local places through practical, positive action.
+                    </p>
+
+                    <button type="button" class="explore-cause">
+                        Explore
+                        <span data-icon="arrow"></span>
+                    </button>
+
+                </article>
+
+
+                <article class="cause-card">
+
+                    <div class="cause-icon blue">
+                        <span data-icon="people"></span>
+                    </div>
+
+                    <h3>Community</h3>
+
+                    <p>
+                        Strengthen the connections that help neighborhoods flourish.
+                    </p>
+
+                    <button type="button" class="explore-cause">
+                        Explore
+                        <span data-icon="arrow"></span>
+                    </button>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- user create profile -->
+        <section class="section" id="profile-section">
+
+            <article class="profile-setup" id="profile-setup">
+
+                <div class="profile-copy">
+
+                    <span class="tiny-label">
+                        MAKE ATHAR YOURS
+                    </span>
+
+                    <h2>
+                        Your giving journey starts here.
+                    </h2>
+
+                    <p>
+                        Tell us a little about yourself and we’ll make your
+                        experience feel more relevant. Your profile stays
+                        on this device.
+                    </p>
+
+                    <div class="privacy">
+
+                        <span data-icon="shield"></span>
+
+                        <span>
+                            Private by design<br>
+                            <small>Saved only in your browser</small>
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <form id="profile-form">
+
+                    <label>
+                        Your first name
+
+                        <input
+                            id="profile-name"
+                            type="text"
+                            placeholder="e.g. Maryam"
+                            required>
+                    </label>
+
+
+                    <div class="form-row">
+
+                        <label>
+                            Main interest
+
+                            <select id="profile-interest">
+                                <option>Education</option>
+                                <option>Healthcare</option>
+                                <option>Environment</option>
+                                <option>Community</option>
+                            </select>
+                        </label>
+
+
+                        <label>
+                            Your emirate
+
+                            <select id="profile-emirate">
+                                <option>Dubai</option>
+                                <option>Abu Dhabi</option>
+                                <option>Sharjah</option>
+                                <option>Ajman</option>
+                                <option>Fujairah</option>
+                            </select>
+                        </label>
+
+                    </div>
+
+
+                    <label>
+                        Free time per week
+
+                        <select id="profile-time">
+                            <option>Less than 1 hour</option>
+                            <option>1–2 hours</option>
+                            <option>3–5 hours</option>
+                            <option>5+ hours</option>
+                        </select>
+                    </label>
+
+
+                    <button class="btn" type="submit">
+                        Create my profile
+                        <span data-icon="arrow"></span>
+                    </button>
+
+                </form>
+
+            </article>
+
+
+            <!-- jouney card -->
+            <article class="journey-card" id="journey-card" hidden>
+
+                <div>
+
+                    <span class="tiny-label light">
+                        YOUR ATHAR JOURNEY
+                    </span>
+
+                    <h2>
+                        Growing one act at a time.
+                    </h2>
+
+                    <p>
+                        Your impact is made of every thoughtful choice.
+                    </p>
+
+                    <button class="btn btn-secondary" type="button">
+                        Continue Your Journey
+                        <span data-icon="arrow"></span>
+                    </button>
+
+                </div>
+
+
+                <div class="journey-stats">
+
+                    <div class="level-symbol">
+                        <span data-icon="leaf" data-size="40"></span>
+                    </div>
+
+                    <h3 id="journey-level">
+                        Seed
+                    </h3>
+
+                    <b id="journey-points">
+                        25 / 50 points
+                    </b>
+
+                    <div class="progress">
+                        <i id="journey-progress"></i>
+                    </div>
+
+                    <div class="stat-row">
+
+                        <span>
+                            <b>3</b>
+                            day streak
+                        </span>
+
+                        <span>
+                            <b>1</b>
+                            recent badge
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+        </section>
+
+    </main>
+
+
+    <!-- footer -->
+    <footer>
+
+        <div class="footer-main">
+
+            <div>
+
+                <a class="logo logo-light" href="#home">
+                     <img src="logo.png" alt="ATHAR - Give With Purpose">
+               </a>
+
+                <p>
+                    Helping people across the UAE discover safe,
+                    purposeful ways to give.
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h4>EXPLORE</h4>
+
+                <a href="#causes">Find a cause</a>
+                <a href="#volunteer">Volunteer</a>
+                <a href="#money">Money giving</a>
+
+            </div>
+
+
+            <div>
+
+                <h4>LEARN</h4>
+
+                <a href="#safe">Safe giving</a>
+                <a href="#about">About Athar</a>
+                <a href="#journey">My journey</a>
+
+            </div>
+
+
+            <div class="footer-note">
+
+                <span data-icon="shield"></span>
+
+                <p>
+                    Athar is an educational directory.
+                    We do not collect or process donations.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <span>
+                © 2026 ATHAR 
+            </span>
+
+            <span>
+                Made with purpose in the UAE
+            </span>
+
+        </div>
+
+    </footer>
+
+</div>
+
+
+<!-- quiz -->
+<div class="quiz-overlay" id="quiz-overlay" hidden>
+
+    <div
+        class="quiz-modal"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="quiz-title">
+
+        <button
+            class="modal-close"
+            id="close-quiz"
+            type="button"
+            aria-label="Close quiz">
+
+            <span data-icon="close"></span>
+
+        </button>
+
+        <div id="quiz-content"></div>
+
+    </div>
+
+</div>
+
+
+<div class="toast" id="toast" hidden>
+
+    <span data-icon="leaf"></span>
+
+    <span id="toast-message"></span>
+
+</div>
+
+
+<script src="main.js"></script>
+
+</body>
+</html>
