@@ -8,7 +8,7 @@
 
     <title>ATHAR | Give With Purpose</title>
 
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="s.css">
 </head>
 
 <body>
@@ -20,7 +20,7 @@
         <div class="header-inner">
 
             <a class="logo" href="#home" aria-label="Athar home">
-              <img src="logo.png" alt="ATHAR - Give With Purpose">
+                <img src="logo.png" alt="ATHAR - Give With Purpose">
             </a>
 
             <nav id="main-nav" aria-label="Main navigation">
@@ -37,7 +37,7 @@
             <div class="user-nav">
                 <div class="level-pill">
                     <span id="level-label">LEVEL 1 · SEED</span>
-                    <b id="header-points">25 POINTS</b>
+                    <b id="header-points">0 POINTS</b>
                 </div>
 
                 <button class="avatar" type="button" aria-label="Open my journey">
@@ -45,12 +45,8 @@
                 </button>
             </div>
 
-            <button
-                id="menu-button"
-                class="menu-button"
-                type="button"
-                aria-label="Toggle menu"
-                aria-expanded="false">
+            <button id="menu-button" class="menu-button" type="button"
+                aria-label="Toggle menu" aria-expanded="false">
                 <span data-icon="menu"></span>
             </button>
 
@@ -58,57 +54,55 @@
     </header>
 
 
-    <!-- page hero -->
- <section id="home" class="page-hero">
+    <!-- hero section -->
+    <section id="home" class="page-hero">
 
-    <div class="hero-orbit orbit-one"></div>
-    <div class="hero-orbit orbit-two"></div>
+        <div class="hero-orbit orbit-one"></div>
+        <div class="hero-orbit orbit-two"></div>
 
-    <div class="hero-content">
+        <div class="hero-content">
 
-        <div class="eyebrow">
-            <span></span>
-            ATHAR · GIVE WITH PURPOSE
+            <div class="eyebrow">
+                <span></span>
+                ATHAR · GIVE WITH PURPOSE
+            </div>
+
+            <h1>Small acts<br>Shared impact</h1>
+
+            <p id="hero-copy">
+                Find a meaningful way to give back to your community,
+                and watch your journey grow.
+            </p>
+
+            <div class="button-row">
+
+                <button class="btn" id="open-quiz" type="button">
+                    Take the Giver Quiz
+                    <span data-icon="arrow"></span>
+                </button>
+
+                <a class="btn btn-secondary" href="#featured-causes">
+                    Explore Ways to Give
+                    <span data-icon="arrow"></span>
+                </a>
+
+            </div>
+
         </div>
 
-        <h1>Small acts<br>Shared impact</h1>
-
-        <p id="hero-copy">
-            Find a meaningful way to give back to your community,
-            and watch your journey grow.
-        </p>
-
-        <div class="button-row">
-
-            <button class="btn" id="open-quiz" type="button">
-                Take the Giver Quiz
-                <span data-icon="arrow"></span>
-            </button>
-
-            <a class="btn btn-secondary" href="#featured-causes">
-                Explore Ways to Give
-                <span data-icon="arrow"></span>
-            </a>
-
+        <!-- donation image -->
+        <div class="hero-image">
+            <img src="donation.png"
+                alt="Donation box representing humanitarian giving in the UAE">
         </div>
 
-    </div>
-
-    <!-- hero section image -->
-    <div class="hero-image">
-        <img
-            src="donation.png"
-            alt="Donation box representing humanitarian giving in the UAE"
-        >
-    </div>
-
-</section>
+    </section>
 
 
-    <!-- main -->
+    <!-- main content -->
     <main>
 
-        <!-- wayes to give -->
+        <!-- ways to give -->
         <section class="giving-grid" aria-label="Ways to give">
 
             <article class="giving-card">
@@ -179,7 +173,7 @@
         </section>
 
 
-        <!-- featured causesS -->
+        <!-- featured causes -->
         <section id="featured-causes" class="section">
 
             <div class="section-title">
@@ -219,7 +213,7 @@
                         Help learners gain the tools, confidence, and access to thrive.
                     </p>
 
-                    <button type="button" class="explore-cause">
+                    <button type="button" class="explore-cause" data-cause="education">
                         Explore
                         <span data-icon="arrow"></span>
                     </button>
@@ -239,7 +233,7 @@
                         Support healthier lives and essential community care.
                     </p>
 
-                    <button type="button" class="explore-cause">
+                    <button type="button" class="explore-cause" data-cause="healthcare">
                         Explore
                         <span data-icon="arrow"></span>
                     </button>
@@ -259,7 +253,7 @@
                         Discover trusted pathways for relief and emergency support.
                     </p>
 
-                    <button type="button" class="explore-cause">
+                    <button type="button" class="explore-cause" data-cause="humanitarian">
                         Explore
                         <span data-icon="arrow"></span>
                     </button>
@@ -279,7 +273,7 @@
                         Protect local places through practical, positive action.
                     </p>
 
-                    <button type="button" class="explore-cause">
+                    <button type="button" class="explore-cause" data-cause="environment">
                         Explore
                         <span data-icon="arrow"></span>
                     </button>
@@ -299,7 +293,7 @@
                         Strengthen the connections that help neighborhoods flourish.
                     </p>
 
-                    <button type="button" class="explore-cause">
+                    <button type="button" class="explore-cause" data-cause="community">
                         Explore
                         <span data-icon="arrow"></span>
                     </button>
@@ -311,7 +305,7 @@
         </section>
 
 
-        <!-- user create profile -->
+        <!-- profile -->
         <section class="section" id="profile-section">
 
             <article class="profile-setup" id="profile-setup">
@@ -351,11 +345,8 @@
                     <label>
                         Your first name
 
-                        <input
-                            id="profile-name"
-                            type="text"
-                            placeholder="e.g. Maryam"
-                            required>
+                        <input id="profile-name" type="text"
+                            placeholder="e.g. Maryam" required>
                     </label>
 
 
@@ -410,7 +401,7 @@
             </article>
 
 
-            <!-- jouney card -->
+            <!-- journey card -->
             <article class="journey-card" id="journey-card" hidden>
 
                 <div>
@@ -446,7 +437,7 @@
                     </h3>
 
                     <b id="journey-points">
-                        25 / 50 points
+                        0 / 50 points
                     </b>
 
                     <div class="progress">
@@ -484,8 +475,8 @@
             <div>
 
                 <a class="logo logo-light" href="#home">
-                     <img src="logo.png" alt="ATHAR - Give With Purpose">
-               </a>
+                    <img src="logo.png" alt="ATHAR - Give With Purpose">
+                </a>
 
                 <p>
                     Helping people across the UAE discover safe,
@@ -534,7 +525,7 @@
         <div class="footer-bottom">
 
             <span>
-                © 2026 ATHAR 
+                © 2026 ATHAR
             </span>
 
             <span>
@@ -551,14 +542,12 @@
 <!-- quiz -->
 <div class="quiz-overlay" id="quiz-overlay" hidden>
 
-    <div
-        class="quiz-modal"
+    <div class="quiz-modal"
         role="dialog"
         aria-modal="true"
         aria-labelledby="quiz-title">
 
-        <button
-            class="modal-close"
+        <button class="modal-close"
             id="close-quiz"
             type="button"
             aria-label="Close quiz">
@@ -574,6 +563,7 @@
 </div>
 
 
+<!-- toast message -->
 <div class="toast" id="toast" hidden>
 
     <span data-icon="leaf"></span>
@@ -583,7 +573,9 @@
 </div>
 
 
-<script src="main.js"></script>
+<!-- shared javascript comes first because quiz.js uses it -->
+<script src="ATHER.js"></script>
+<script src="quiz.js"></script>
 
 </body>
 </html>
