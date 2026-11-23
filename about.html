@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About | Athar</title>
+  <!-- Swap to css/style.css once Member 1 publishes the shared design -->
+  <link rel="stylesheet" href="css/journey.css">
+  <style>
+    .badge{color:var(--ink)}
+    .badge p{margin:.2rem 0 .5rem;color:var(--muted)}
+    a.btn{display:inline-block;text-decoration:none}
+    ul.plain{padding-left:1.2rem;margin:.5rem 0 0}
+    .picks{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:.6rem;margin:.75rem 0 1rem}
+    .picks label{display:flex;gap:.5rem;align-items:center;padding:.6rem .8rem;background:#F3F1EA;border:2px solid var(--line);border-radius:12px;cursor:pointer}
+    .picks label:has(input:checked){background:var(--mint);border-color:var(--emerald)}
+    .picks input{accent-color:var(--emerald)}
+    .stack{display:grid;gap:.75rem}
+    textarea{font:1rem system-ui,sans-serif;padding:.55rem .6rem;border:1px solid var(--line);border-radius:8px;width:100%}
+    input[type=email]{font:1rem system-ui,sans-serif;padding:.55rem .6rem;border:1px solid var(--line);border-radius:8px;background:#fff}
+    @media print{.nav,.btn,.note{display:none}}
+  </style>
+</head>
+<body>
+  <nav class="nav" aria-label="Main">
+    <a class="brand" href="index.html">Athar</a>
+    <a class="link" href="index.html">Home</a>
+    <a class="link" href="money.html">Money</a>
+    <a class="link" href="items.html">Items</a>
+    <a class="link" href="volunteer.html">Volunteer</a>
+    <a class="link" href="causes.html">Causes</a>
+    <a class="link" href="safe-giving.html">Safe Giving</a>
+    <a class="link" href="game.html">Real or Scam?</a>
+    <a class="link" href="journey.html">My Journey</a>
+    <a class="link current" href="about.html">About</a>
+    <span class="chip" id="athar-level" aria-label="Your level"></span>
+  </nav>
+
+  <main>
+    <h1>About Athar</h1>
+    <p class="lead">Athar means "a lasting trace". We help people in the UAE find safe, official ways to donate money, donate items or volunteer, with points and levels to keep it fun.</p>
+
+    <section class="card" aria-labelledby="w-h">
+      <h2 id="w-h">What Athar is</h2>
+      <p>A student project and an information directory. Athar does not collect donations and does not endorse or certify any organisation. Check every official link before you give.</p>
+      <p class="note">Points, badges and your giving log are self-reported and stay in your own browser.</p>
+    </section>
+
+    <section class="card" aria-labelledby="f-h">
+      <h2 id="f-h">Send us feedback</h2>
+      <form class="stack" id="fb" novalidate>
+        <label class="field">Name<input type="text" id="name" autocomplete="name"></label>
+        <label class="field">Email<input type="email" id="email" autocomplete="email"></label>
+        <label class="field">Message<textarea id="msg" rows="4"></textarea></label>
+        <div><button class="btn" type="submit">Send feedback</button></div>
+      </form>
+      <p class="error" id="err" role="alert"></p>
+      <p class="note" id="thanks" hidden>Thank you! Your feedback was checked. This demo form does not send anything anywhere.</p>
+    </section>
+  </main>
+
+  <script src="js/athar.js"></script>
+<script>
+  document.getElementById("fb").addEventListener("submit",function(ev){
+    ev.preventDefault();
+    var n=document.getElementById("name").value.trim(),
+        em=document.getElementById("email").value.trim(),
+        m=document.getElementById("msg").value.trim(),
+        err=document.getElementById("err"), msg="";
+    if(n.length<2) msg="Please enter your name.";
+    else if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(em)) msg="Please enter a valid email address.";
+    else if(m.length<10) msg="Please write at least 10 characters in your message.";
+    err.textContent=msg;
+    if(!msg){this.hidden=true;document.getElementById("thanks").hidden=false;awardOnce("feedback",5);}
+  });
+</script>
+</body>
+</html>

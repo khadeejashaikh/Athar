@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Donate Money | Athar</title>
+  <!-- Swap to css/style.css once Member 1 publishes the shared design -->
+  <link rel="stylesheet" href="css/journey.css">
+  <style>
+    .badge{color:var(--ink)}
+    .badge p{margin:.2rem 0 .5rem;color:var(--muted)}
+    a.btn{display:inline-block;text-decoration:none}
+    ul.plain{padding-left:1.2rem;margin:.5rem 0 0}
+    .picks{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:.6rem;margin:.75rem 0 1rem}
+    .picks label{display:flex;gap:.5rem;align-items:center;padding:.6rem .8rem;background:#F3F1EA;border:2px solid var(--line);border-radius:12px;cursor:pointer}
+    .picks label:has(input:checked){background:var(--mint);border-color:var(--emerald)}
+    .picks input{accent-color:var(--emerald)}
+    .stack{display:grid;gap:.75rem}
+    textarea{font:1rem system-ui,sans-serif;padding:.55rem .6rem;border:1px solid var(--line);border-radius:8px;width:100%}
+    input[type=email]{font:1rem system-ui,sans-serif;padding:.55rem .6rem;border:1px solid var(--line);border-radius:8px;background:#fff}
+    @media print{.nav,.btn,.note{display:none}}
+  </style>
+</head>
+<body>
+  <nav class="nav" aria-label="Main">
+    <a class="brand" href="index.html">Athar</a>
+    <a class="link" href="index.html">Home</a>
+    <a class="link current" href="money.html">Money</a>
+    <a class="link" href="items.html">Items</a>
+    <a class="link" href="volunteer.html">Volunteer</a>
+    <a class="link" href="causes.html">Causes</a>
+    <a class="link" href="safe-giving.html">Safe Giving</a>
+    <a class="link" href="game.html">Real or Scam?</a>
+    <a class="link" href="journey.html">My Journey</a>
+    <a class="link" href="about.html">About</a>
+    <span class="chip" id="athar-level" aria-label="Your level"></span>
+  </nav>
+
+  <main>
+    <h1>Donate Money</h1>
+    <p class="lead">In the UAE, only licensed charities and authorised government bodies can collect money. Start from these official links, and type the address yourself instead of following a link in a message.</p>
+
+    <section class="card" aria-labelledby="ch-h">
+      <h2 id="ch-h">Official channels</h2>
+      <ul class="badges">
+        <li class="badge"><strong>UAE Government Portal</strong><p>The official u.ae list of licensed charities, zakat channels and fundraising rules.</p><br><a class="btn small" href="https://u.ae/en/information-and-services/charity-and-humanitarian-work/ways-of-doing-charity-in-the-uae" target="_blank" rel="noopener noreferrer">Open u.ae</a></li>
+        <li class="badge"><strong>Emirates Red Crescent</strong><p>Relief, sponsorship for families, orphans and students, and seasonal campaigns.</p><br><a class="btn small" href="https://www.rcuae.ae" target="_blank" rel="noopener noreferrer">Visit rcuae.ae</a></li>
+        <li class="badge"><strong>Dubai Cares</strong><p>Education programmes for children in developing countries.</p><br><a class="btn small" href="https://www.dubaicares.ae" target="_blank" rel="noopener noreferrer">Visit dubaicares.ae</a></li>
+      </ul>
+    </section>
+    <section class="card" aria-labelledby="z-h">
+      <h2 id="z-h">Zakat</h2>
+      <p>Zakat is collected through licensed channels, including the National Zakat Platform and the Zakat Fund. The u.ae page lists the current payment options.</p>
+    </section>
+    <section class="card" aria-labelledby="b-h">
+      <h2 id="b-h">Before you give</h2>
+      <ul class="plain">
+        <li>Check the organisation appears on the u.ae list.</li>
+        <li>Do not give cash to strangers or forward donation links. Unlicensed fundraising is illegal in the UAE.</li>
+        <li>Keep your receipt. See <a href="safe-giving.html">Safe Giving</a> for more tips.</li>
+      </ul>
+    </section>
+    <p class="note">Athar does not collect donations. It only links to official websites. Check each link on the organisation's own site before you give.</p>  </main>
+
+  <script src="js/athar.js"></script>
+<script>markExplored("money");</script>
+</body>
+</html>

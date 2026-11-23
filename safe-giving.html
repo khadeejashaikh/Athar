@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Safe Giving | Athar</title>
+  <!-- Swap to css/style.css once Member 1 publishes the shared design -->
+  <link rel="stylesheet" href="css/journey.css">
+  <style>
+    .badge{color:var(--ink)}
+    .badge p{margin:.2rem 0 .5rem;color:var(--muted)}
+    a.btn{display:inline-block;text-decoration:none}
+    ul.plain{padding-left:1.2rem;margin:.5rem 0 0}
+    .picks{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:.6rem;margin:.75rem 0 1rem}
+    .picks label{display:flex;gap:.5rem;align-items:center;padding:.6rem .8rem;background:#F3F1EA;border:2px solid var(--line);border-radius:12px;cursor:pointer}
+    .picks label:has(input:checked){background:var(--mint);border-color:var(--emerald)}
+    .picks input{accent-color:var(--emerald)}
+    .stack{display:grid;gap:.75rem}
+    textarea{font:1rem system-ui,sans-serif;padding:.55rem .6rem;border:1px solid var(--line);border-radius:8px;width:100%}
+    input[type=email]{font:1rem system-ui,sans-serif;padding:.55rem .6rem;border:1px solid var(--line);border-radius:8px;background:#fff}
+    @media print{.nav,.btn,.note{display:none}}
+  </style>
+</head>
+<body>
+  <nav class="nav" aria-label="Main">
+    <a class="brand" href="index.html">Athar</a>
+    <a class="link" href="index.html">Home</a>
+    <a class="link" href="money.html">Money</a>
+    <a class="link" href="items.html">Items</a>
+    <a class="link" href="volunteer.html">Volunteer</a>
+    <a class="link" href="causes.html">Causes</a>
+    <a class="link current" href="safe-giving.html">Safe Giving</a>
+    <a class="link" href="game.html">Real or Scam?</a>
+    <a class="link" href="journey.html">My Journey</a>
+    <a class="link" href="about.html">About</a>
+    <span class="chip" id="athar-level" aria-label="Your level"></span>
+  </nav>
+
+  <main>
+    <h1>Safe Giving</h1>
+    <p class="lead">Scammers copy real charities, especially in Ramadan and after disasters. These habits keep your giving safe.</p>
+
+    <section class="card" aria-labelledby="h-h">
+      <h2 id="h-h">Seven safe habits</h2>
+      <ul class="badges">
+        <li class="badge"><strong>Use licensed charities only.</strong><p>The u.ae portal lists them.</p></li>
+        <li class="badge"><strong>Go to the website yourself.</strong><p>Type the address instead of tapping a link.</p></li>
+        <li class="badge"><strong>Watch for pressure.</strong><p>"Give in the next hour" is a warning sign.</p></li>
+        <li class="badge"><strong>Never share your PIN, CVV or one-time code.</strong><p>A real charity will not ask.</p></li>
+        <li class="badge"><strong>Do not hand money to strangers</strong><p>or forward donation links. It is illegal without a licence.</p></li>
+        <li class="badge"><strong>Check the account name.</strong><p>It should match the charity's name on its official site.</p></li>
+        <li class="badge"><strong>Keep a receipt</strong><p>and report anything suspicious.</p></li>
+      </ul>
+    </section>
+    <section class="card" aria-labelledby="t-h">
+      <h2 id="t-h">Test yourself</h2>
+      <p>Can you tell a real appeal from a scam? Play the game and earn points.</p>
+      <a class="btn" href="game.html">Play Real or Scam?</a>
+    </section>
+    <p class="note">Official list: <a href="https://u.ae/en/information-and-services/charity-and-humanitarian-work/ways-of-doing-charity-in-the-uae" target="_blank" rel="noopener noreferrer">u.ae charity page</a>. Athar is an information directory and does not certify any organisation.</p>  </main>
+
+  <script src="js/athar.js"></script>
+
+</body>
+</html>

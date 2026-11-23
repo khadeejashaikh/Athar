@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Donate Items | Athar</title>
+  <!-- Swap to css/style.css once Member 1 publishes the shared design -->
+  <link rel="stylesheet" href="css/journey.css">
+  <style>
+    .badge{color:var(--ink)}
+    .badge p{margin:.2rem 0 .5rem;color:var(--muted)}
+    a.btn{display:inline-block;text-decoration:none}
+    ul.plain{padding-left:1.2rem;margin:.5rem 0 0}
+    .picks{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:.6rem;margin:.75rem 0 1rem}
+    .picks label{display:flex;gap:.5rem;align-items:center;padding:.6rem .8rem;background:#F3F1EA;border:2px solid var(--line);border-radius:12px;cursor:pointer}
+    .picks label:has(input:checked){background:var(--mint);border-color:var(--emerald)}
+    .picks input{accent-color:var(--emerald)}
+    .stack{display:grid;gap:.75rem}
+    textarea{font:1rem system-ui,sans-serif;padding:.55rem .6rem;border:1px solid var(--line);border-radius:8px;width:100%}
+    input[type=email]{font:1rem system-ui,sans-serif;padding:.55rem .6rem;border:1px solid var(--line);border-radius:8px;background:#fff}
+    @media print{.nav,.btn,.note{display:none}}
+  </style>
+</head>
+<body>
+  <nav class="nav" aria-label="Main">
+    <a class="brand" href="index.html">Athar</a>
+    <a class="link" href="index.html">Home</a>
+    <a class="link" href="money.html">Money</a>
+    <a class="link current" href="items.html">Items</a>
+    <a class="link" href="volunteer.html">Volunteer</a>
+    <a class="link" href="causes.html">Causes</a>
+    <a class="link" href="safe-giving.html">Safe Giving</a>
+    <a class="link" href="game.html">Real or Scam?</a>
+    <a class="link" href="journey.html">My Journey</a>
+    <a class="link" href="about.html">About</a>
+    <span class="chip" id="athar-level" aria-label="Your level"></span>
+  </nav>
+
+  <main>
+    <h1>Donate Items</h1>
+    <p class="lead">Good items help families in need, but only if they reach a licensed organisation. Build a checklist before you pack.</p>
+
+    <section class="card" aria-labelledby="cl-h">
+      <h2 id="cl-h">Checklist builder</h2>
+      <p class="small">Tick what you plan to donate.</p>
+      <div class="picks">
+        <label><input type="checkbox" name="cat" value="Clothes"> Clothes</label>
+        <label><input type="checkbox" name="cat" value="Shoes"> Shoes</label>
+        <label><input type="checkbox" name="cat" value="Books"> Books</label>
+        <label><input type="checkbox" name="cat" value="School supplies"> School supplies</label>
+        <label><input type="checkbox" name="cat" value="Toys"> Toys</label>
+        <label><input type="checkbox" name="cat" value="Small furniture"> Small furniture</label>
+        <label><input type="checkbox" name="cat" value="Non-perishable food"> Non-perishable food</label>
+        <label><input type="checkbox" name="cat" value="Household items"> Household items</label>
+      </div>
+      <button class="btn" id="build" type="button">Build my checklist</button>
+      <p class="error" id="err" role="alert"></p>
+      <div id="out" hidden>
+        <h3>Your checklist</h3>
+        <ul id="list" class="plain"></ul>
+        <p><button class="btn outline small" id="print" type="button">Print</button></p>
+      </div>
+    </section>
+    <section class="card" aria-labelledby="wg-h">
+      <h2 id="wg-h">Where to give</h2>
+      <ul class="badges">
+        <li class="badge"><strong>Emirates Red Crescent</strong><p>Check their website for collection points and what they accept now.</p><br><a class="btn small" href="https://www.rcuae.ae" target="_blank" rel="noopener noreferrer">Visit rcuae.ae</a></li>
+        <li class="badge"><strong>Official charity list</strong><p>Other licensed organisations that take items, on the u.ae portal.</p><br><a class="btn small" href="https://u.ae/en/information-and-services/charity-and-humanitarian-work/ways-of-doing-charity-in-the-uae" target="_blank" rel="noopener noreferrer">Open u.ae</a></li>
+      </ul>
+    </section>
+    <p class="note">Athar does not collect items or money. Call or check the charity's website first, because needs change.</p>  </main>
+
+  <script src="js/athar.js"></script>
+<script>
+  markExplored("items");
+  var TIPS={"Clothes":"Wash, fold and bag them. Only clean items in good condition.",
+    "Shoes":"Tie pairs together. No broken soles.","Books":"Check pages are complete and the language suits the charity.",
+    "School supplies":"Unused is best. Keep sets together.","Toys":"Check for broken or missing parts and old batteries.",
+    "Small furniture":"Ask first. Many charities cannot collect large items.","Non-perishable food":"Check expiry dates. Nothing opened or damaged.",
+    "Household items":"Clean and working only. Ask if they accept electrical items."};
+  document.getElementById("build").onclick=function(){
+    var chosen=[].slice.call(document.querySelectorAll("input[name=cat]:checked")).map(function(c){return c.value;});
+    var err=document.getElementById("err"),out=document.getElementById("out"),ul=document.getElementById("list");
+    err.textContent=chosen.length?"":"Please tick at least one item."; out.hidden=chosen.length===0; ul.innerHTML="";
+    chosen.concat(["Confirm the charity is licensed (u.ae list)","Call or check their website for collection hours","Keep any receipt"]).forEach(function(t){
+      var li=document.createElement("li"); li.textContent=TIPS[t]?t+": "+TIPS[t]:t; ul.appendChild(li);});
+    if(chosen.length) awardOnce("items-checklist",5);
+  };
+  document.getElementById("print").onclick=function(){window.print();};
+</script>
+</body>
+</html>
