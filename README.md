@@ -21,7 +21,7 @@ Only edit your own files. If you need a change in someone else's file, message t
 
 | Member | Files                                                                                        |
 |--------|----------------------------------------------------------------------------------------------|
-| 1      | `index.html`, `css/style.css`, `js/quiz.js`                                                  |
+| 1      | `index.html`, `css/style.css`, `js/index.js`                                                  |
 | 2      | `js/athar.js`, `js/game.js`, `js/journey.js`, `game.html`, `journey.html`, `css/journey.css` |
 | 3      | `volunteer.html`, `causes.html`                                                              |
 | 4      | `money.html`, `items.html`, `safe-giving.html`, `about.html`                                 |
