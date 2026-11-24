@@ -325,7 +325,7 @@ function renderQuiz() {
         content.innerHTML = `
             <div class="quiz-top">
                 <div class="logo">
-                    <img src="images/logo.png" alt="ATHAR - Give With Purpose">
+            <img src="images/logo.png" alt="ATHAR - Give With Purpose">
                 </div>
 
                 <span>
