@@ -925,25 +925,30 @@ textarea:focus {
 }
 
 
+/* =========================================================
+   16. shared navigation
+   for the other pages
+   ========================================================= */
+
 .nav {
     min-height: 82px;
 
-    background: var(--cream);
-
+    background: rgba(247, 243, 233, 0.94);
     border-bottom: 1px solid rgba(15, 90, 70, 0.1);
 
     display: flex;
     align-items: center;
 
-    gap: clamp(10px, 2vw, 25px);
+    gap: 2px;
 
-    padding: 8px 4.5%;
+    padding: 0 4.5%;
 
     white-space: nowrap;
-    overflow-x: auto;
 
     position: relative;
     z-index: 30;
+
+    backdrop-filter: blur(14px);
 }
 
 .nav a {
@@ -951,17 +956,27 @@ textarea:focus {
 }
 
 .nav .brand {
+    display: flex;
+    align-items: center;
+
     margin-right: auto;
 
-    color: var(--emerald);
+    flex-shrink: 0;
 
-    font-family: 'Manrope', sans-serif;
-    font-size: 28px;
-    font-weight: 800;
+    line-height: 0;
+}
+
+.nav .brand img {
+    width: 190px;
+    height: auto;
+
+    display: block;
+
+    object-fit: contain;
 }
 
 .nav .link {
-    padding: 8px 10px;
+    padding: 5px 10px 2px;
 
     border-bottom: 2px solid transparent;
 
@@ -969,6 +984,11 @@ textarea:focus {
 
     font-size: 13px;
     font-weight: 600;
+
+    white-space: nowrap;
+
+    display: flex;
+    align-items: center;
 }
 
 .nav .link:hover,
@@ -978,20 +998,24 @@ textarea:focus {
 }
 
 .chip {
-    padding: 7px 13px;
+    min-width: 100px;
+
+    padding: 6px 10px;
 
     border: 1px solid #cad7d1;
-    border-radius: 20px;
+    border-radius: 9px;
 
     background: rgba(255, 255, 255, 0.5);
 
     color: var(--emerald);
 
-    font-size: 11px;
+    font-size: 8px;
     font-weight: 700;
+
+    letter-spacing: 0.12em;
+
+    margin-left: 8px;
 }
-
-
 .badges {
     list-style: none;
 
@@ -2400,21 +2424,23 @@ footer {
     }
 
     .nav {
-        min-height: 70px;
-        padding-inline: 4%;
-    }
+    min-height: 70px;
+    padding-inline: 4%;
+    gap: 2px;
+}
 
-    .nav .brand {
-        font-size: 24px;
-    }
+.nav .brand img {
+    width: 155px;
+}
 
-    .nav .link {
-        font-size: 11px;
-    }
+.nav .link {
+    font-size: 11px;
+    padding-inline: 6px;
+}
 
-    .chip {
-        display: none;
-    }
+.chip {
+    display: none;
+}
 
     .page-hero {
         min-height: 420px;
