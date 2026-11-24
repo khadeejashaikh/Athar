@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Volunteer | Athar</title>
+	<script src="js/athar.js" defer></script>
+</head>
+<body>
+<nav class="nav" aria-label="Main">
+	<a class="brand" href="index.html">Athar</a>
+	<a class="link" href="index.html">Home</a>
+	<a class="link" href="money.html">Money</a>
+	<a class="link" href="items.html">Items</a>
+	<a class="link current" href="volunteer.html" aria-current="page">Volunteer</a>
+	<a class="link" href="causes.html">Causes</a>
+	<a class="link" href="safe-giving.html">Safe Giving</a>
+	<a class="link" href="game.html">Real or Scam?</a>
+	<a class="link" href="journey.html">My Journey</a>
+	<a class="link" href="about.html">About</a>
+	<span class="chip" id="athar-level" aria-label="Your level"></span>
+</nav>
+
+<main>
+
+<h1>Volunteer</h1>
+<p>Find volunteering resources that match your interests and where you live.</p>
+
+<section aria-labelledby="finder-title">
+	<h2 id="finder-title">Volunteer Finder</h2>
+
+	<form id="volunteer-filters" hidden>
+		<div>
+			<label for="interest">Interest</label>
+			<select id="interest" name="interest">
+				<option value="">All interests</option>
+				<option value="community">Community support</option>
+				<option value="education">Education</option>
+				<option value="environment">Environment</option>
+				<option value="health">Health and well-being</option>
+			</select>
+		</div>
+
+		<div>
+			<label for="emirate">Emirate</label>
+			<select id="emirate" name="emirate">
+
+			<option value="">All emirates</option>
+				<option value="abu-dhabi">Abu Dhabi</option>
+				<option value="ajman">Ajman</option>
+				<option value="dubai">Dubai</option>
+				<option value="fujairah">Fujairah</option>
+				<option value="ras-al-khaimah">Ras Al Khaimah</option>
+				<option value="sharjah">Sharjah</option>
+				<option value="umm-al-quwain">Umm Al Quwain</option>
+			</select>
+		</div>
+
+		<button type="reset">Clear filters</button>
+
+	  </form>
+    </section>
+
+    <section aria-labelledby="resources-title">
+    	<h2 id="resources-title">Volunteering Resources</h2>
+    	<p>Check each official website for current opportunities, eligibility, and how to apply.</p>
+
+    	<p id="result-count" role="status"></p>
+
+    	<div id="volunteer-resources">
+    		<article data-emirates="nationwide" data-interests="community education environment health"> 
+    			<h3>Volunteers.ae</h3>
+    			<p>Across the UAE</p>
+    			<p>Browse volunteering opportunities on the national platform</p>
+    			<a href="https://www.volunteers.ae/en" data-resource-id="volunteers-ae">
+    				Visit Volunteers.ae
+    			</a>
+    		</article>
+
+    		<article data-emirates="nationwide" data-interests="environment"> 
+    			<h3>Emirates Envirmental Group</h3>
+    			<p>Check the Clean UAE campaign page for cleanup dates and locations.</p>
+    			<a href="https://www.eeg-uae.org/projects/clean-up-uae/" data-resource-id="eeg-clean-uae">
+    				Visit the Clean UAE campaign page
+    			</a>
+    		</article>
+
+    		<article data-emirates="abu-dhabi" data-interests="community">
+    			<h3>Abu Dhabi</h3>
+    			<p>Read about Ma'an's volunteering programmes.</p>
+
+    			<a href="https://maan.gov.ae/en/support-our-mission/volunteer/" data-resource-id="maan-abu-dhabi">
+
+    			 Ma'an Volunteering
+    			</a>
+    		</article>
+
+    		<article data-emirates="abu-dhabi" data-interests="health">
+    			<h3>Operation Smile UAE</h3>
+    			<p>Explore community and medical volunteer roles with Operation Smile UAE.</p>
+
+    			<a href="https://operationsmile.ae/volunteer/" data-resource-id="operation-smile-uae">
+
+    			 Visit the Operation Smile UAE volunteer page
+    			</a>
+    		</article>
+
+
+    		<article data-emirates="ajman" data-interests="community">
+    			<h3>Ajman</h3>
+    			<p>Find the Ajman Volunteer Team's sign-up form</p>
+    			<a href="https://www.ajmanvolunteer.com/contact-us.html"
+             data-resource-id="ajman-volunteer-team">
+    				Ajman Volunteer Team
+    			</a>
+    		</article>
+
+    		<article data-emirates="dubai" data-interests="community">
+    			<h3>Dubai</h3>
+    			<p>Learn about Dubai's volunteering programmes and how to register.</p>
+    			<a href="https://www.dubai.ae/living/society-welfare/volunteering"
+             data-resource-id="dubai-volunteering-guide">
+
+    			Dubai Government Volunteering Guide
+    			</a>
+    		</article>
+
+    		<article data-emirates="dubai" data-interests="community">
+    			<h3>Senses Residential and Day Care</h3>
+    			<p>Apply to volunteer at a Dubai centre that supports people of determination.</p>
+    			<a href="https://www.sensescenter.ae/volunteer/"
+             data-resource-id="senses-center">
+
+    			Visit the Senses volunteer page
+    			</a>
+    		</article>
+
+    		<article data-emirates="dubai" data-interests="health">
+    			<h3>Al Jalila Foundation</h3>
+    			<p>Learn about patient visits and other roles in the Community Volunteering Program.</p>
+    			<a href="https://aljalilafoundation.ae/en/get-involved/community-volunteering-program/"
+             data-resource-id="al-jalila-volunteering">
+
+    			Visit the Al Jalila Foundation volunteer page
+    			</a>
+    		</article>
+
+    		<article data-emirates="dubai" data-interests="education">
+    			<h3>Dubai Cares</h3>
+    			<p>Explore education-based volunteering programmes and learn how to join.</p>
+    			<a href="https://www.dubaicares.ae/volunteer"
+             data-resource-id="dubai-cares">
+             Visit Dubai Cares
+
+    			</a>
+    		</article>
+
+
+
+    		<article data-emirates="fujairah" data-interests="community">
+    			<h3>Fujairah</h3>
+    			<p>Find the Fujairah Charity Association's Volunteer registration form.</p>
+    			<a href="https://fujcharity.ae/volunteering"
+                 data-resource-id="fujairah-charity">
+                 Fujairah Charity volunteer portal
+    			</a>
+    		</article>
+
+    		<article data-emirates="fujairah ras-al-khaimah" data-interests="environment">
+    			<h3>Emirates Nature</h3>
+    			<p>Browse conservation activities in locations including Fujairah and Ras Al Khaimah.</p>
+    			<a href="https://www.leadersofchange.ae/events/act"
+                 data-resource-id="nature-wwf-field-activities">
+                 Explore field activities
+    			</a>
+    		</article>
+
+    		<article data-emirates="ras-al-khaimah" data-interests="community">
+    			<h3>Ras Al Khaimah</h3>
+    			<p>Register your interest in volunteering for local events and projects.</p>
+    			<a href="https://hr.rak.ae/services/volunteering"
+             data-resource-id="rak-volunteering">
+                 Ras Al Khaimah volunteering page
+    			</a>
+    		</article>
+
+    		<article data-emirates="sharjah" data-interests="community">
+    			<h3>Sharjah</h3>
+    			<p>Learn more about the Bader platform and check who can register.</p>
+    			<a href="https://volunteers.dhr.gov.ae/en-US/AboutUs"
+             data-resource-id="bader-sharjah">
+                 Bader volunteering Platform
+    			</a>
+    		</article>
+
+    		<article data-emirates="umm-al-quwain" data-interests="community education environment health">
+    			<h3>Umm Al Quwain</h3>
+    			<p>Contact the Umm Al Quwain branch about volunteering.</p>
+    			<a href="https://www.emiratesrc.ae/en/about/contact"
+             data-resource-id="uaq-red-crescent">
+                 Find Umm Al Quwain Red Crescent branch
+    			</a>
+    		</article>
+    	</div>
+
+
+    	<p id="empty-results" hidden>
+    		Try a different interest or emirate, or clear the filters.
+    	</p>
+    </section>
+  </main>
+
+  <footer>
+	<p>Athar . Give With Purpose</p>
+  </footer>
+
+ <script>
+ 
+document.addEventListener("DOMContentLoaded", function () {
+
+	const form = document.getElementById("volunteer-filters");
+	const interest = document.getElementById("interest");
+	const emirate = document.getElementById("emirate");
+	const resources = document.getElementById("volunteer-resources");
+	const cards = resources.querySelectorAll("article");
+	const resultCount = document.getElementById("result-count");
+	const emptyResults = document.getElementById("empty-results");
+
+function updateResults(){
+
+ let count = 0;
+
+ for(const card of cards){
+
+   const interests = card.dataset.interests.split(" ");
+   const emirates = card.dataset.emirates.split(" ");
+
+   const matchesInterest =
+
+     interest.value == "" || interests.includes(interest.value);
+
+
+    const matchesEmirate =
+     emirate.value == "" ||
+     emirates.includes(emirate.value) ||
+     emirates.includes("nationwide");
+
+    card.hidden = !(matchesInterest && matchesEmirate);
+
+    if(!card.hidden){
+    	count++;
+    }
+}
+
+    resultCount.textContent = 
+    count == 1 ? "1 resource found" : count + " resources found";
+
+  if(emptyResults){
+  	emptyResults.hidden = count !== 0;
+  }
+    
+
+}
+
+form.addEventListener("submit", function(event){
+	event.preventDefault();
+
+
+});
+
+ form.addEventListener("change", updateResults);
+
+  form.addEventListener("reset", function() {
+  	requestAnimationFrame(updateResults);
+  });
+
+  form.hidden = false;
+
+  updateResults();
+ });
+ </script>
+</body>
+</html>
