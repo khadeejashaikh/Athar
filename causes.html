@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Causes | Athar</title>
+	<script src="js/athar.js" defer></script>
+</head>
+<body>
+<nav class="nav" aria-label="Main">
+	<a class="brand" href="index.html">Athar</a>
+	<a class="link" href="index.html">Home</a>
+	<a class="link" href="money.html">Money</a>
+	<a class="link" href="items.html">Items</a>
+	<a class="link" href="volunteer.html">Volunteer</a>
+	<a class="link current" href="causes.html" aria-current="page">Causes</a>
+	<a class="link" href="safe-giving.html">Safe Giving</a>
+	<a class="link" href="game.html">Real or Scam?</a>
+	<a class="link" href="journey.html">My Journey</a>
+	<a class="link" href="about.html">About</a>
+	<span class="chip" id="athar-level" aria-label="Your level"></span>
+</nav>
+
+<main>
+
+<h1>Causes</h1>
+<p>Explore causes you care about and find official resources to learn how you can help.</p>
+
+<section aria-labelledby="finder-title">
+	<h2 id="finder-title">Filter by Cause</h2>
+
+	<div id="cause-filters" role="group" aria-label="Cause categories" hidden>
+
+		<button type="button" data-category="" aria-pressed="true">All causes</button>
+		<button type="button" data-category="education" aria-pressed="false">Education</button>
+		<button type="button" data-category="healthcare" aria-pressed="false">Healthcare</button>
+		<button type="button" data-category="humanitarian-aid" aria-pressed="false">Humanitarian Aid</button>
+		<button type="button" data-category="environment" aria-pressed="false">Environment</button>
+		<button type="button" data-category="community-inclusion" aria-pressed="false">Community Inclusion</button>
+
+	</div>
+
+<p id="cause-count" role="status"></p>
+
+<div id="cause-cards">
+	<article data-cause="education">
+		<h3>Education</h3>
+		<p>Help more learners access school and build skills.</p>
+
+        <details>
+        	<summary>Explore education</summary>
+        	<p>Dubai Cares supports education programs for children and young people.</p>
+
+
+        	<a href="https://www.dubaicares.ae/about" data-resource-id="dubai-cares-about">
+        		Visit Dubai Cares
+        	</a>
+         </details>
+     </article>
+
+
+    <article data-cause="healthcare">
+		<h3>Healthcare</h3>
+		<p>Help enhance access to medical care.</p>
+
+        <details>
+        	<summary>Explore healthcare</summary>
+        	<p>Al Jalila Foundation's A'awen program helps UAE based patients to access treatments.</p>
+
+
+        	<a href="https://aljalilafoundation.ae/en/our-program/care/treatment/" data-resource-id="al-jalila-aawen">
+        		Visit Al Jalila Foundation
+        	</a>
+         </details>
+     </article>
+
+
+      <article data-cause="humanitarian-aid">
+		<h3>Humanitarian Aid</h3>
+		<p>Support communities affected by emergencies and hardship.</p>
+
+        <details>
+        	<summary>Explore humanitarian aid</summary>
+        	<p>Emirates Red Crescent provides emergency relief and community assistance.</p>
+
+
+        	<a href="https://www.emiratesrc.ae/en/about" data-resource-id="emirates-red-crescent-about">
+        		Visit Emirates Red Crescent
+        	</a>
+         </details>
+     </article>
+
+
+    <article data-cause="environment">
+		<h3>Environment</h3>
+		<p>Help protect natural habitats and wildlife.</p>
+
+        <details>
+        	<summary>Explore the environment </summary>
+        	<p>Emirates Nature-WWF works to conserve the UAE's natural heritage.</p>
+
+
+        	<a href="https://emiratesnaturewwf.ae/en/about-emirates-nature-wwf" data-resource-id="emirates-nature-wwf">
+        		Visit Emirates Nature-WWF
+        	</a>
+         </details>
+     </article>
+
+        <article data-cause="education">
+        <h3>Education · Emirates Airline Foundation</h3>
+        <p>Help more children access learning opportunities.</p>
+   <details>
+       <summary>Explore the Emirates Airline Foundation</summary>
+        <p>The foundation supports projects that help children access education.</p>
+         <a href="https://www.emiratesairlinefoundation.org/english/aboutus/"
+         data-resource-id="emirates-airline-foundation-about">
+      Visit the Emirates Airline Foundation
+    </a>
+  </details>
+</article>
+
+       <article data-cause="healthcare">
+       <h3>Healthcare · Noor Dubai Foundation</h3>
+       <p>Help people access eye care.</p>
+       <details>
+        <summary>Explore Noor Dubai’s eye care programmes</summary>
+        <p>Noor Dubai runs eye care programmes that include outreach and treatment.</p>
+         <a href="https://www.noordubai.ae/WhatWeDo/en_Programs?Sec=73"
+       data-resource-id="noor-dubai-programmes">
+      View Noor Dubai’s programmes
+    </a>
+  </details>
+</article>
+
+         <article data-cause="humanitarian-aid">
+          <h3>Humanitarian Aid · UNHCR in the UAE</h3>
+           <p>Learn about support for refugees and displaced people.</p>
+      <details>
+    <summary>Explore UNHCR’s work with UAE partners</summary>
+    <p>UNHCR works with the UAE and its partners to support people displaced by conflict and crises.</p>
+    <a href="https://www.unhcr.org/where-we-work/countries/united-arab-emirates"
+       data-resource-id="unhcr-uae">
+      Visit UNHCR’s UAE page
+    </a>
+  </details>
+</article>
+
+      <article data-cause="environment">
+      <h3>Environment · Emirates Environmental Group</h3>
+      <p>Help keep outdoor spaces clean.</p>
+  <details>
+    <summary>Explore the Clean UAE campaign</summary>
+    <p>The campaign brings volunteers together to collect litter across the UAE.</p>
+    <a href="https://www.eeg-uae.org/projects/clean-up-uae/"
+       data-resource-id="eeg-clean-uae">
+      Visit the Clean UAE campaign page
+    </a>
+  </details>
+</article>
+
+      <article data-cause="community-inclusion">
+      <h3>Community Inclusion · Senses Centre</h3>
+       <p>Learn about care and support for people of determination.</p>
+  <details>
+    <summary>Explore the work of Senses Centre</summary>
+    <p>Senses Centre provides residential and day care in Dubai.</p>
+    <a href="https://www.sensescenter.ae/about-senses/"
+       data-resource-id="senses-centre-about">
+      Learn about Senses Centre
+    </a>
+  </details>
+</article>
+
+
+    <article data-cause="community-inclusion">
+		<h3>Community Inclusion</h3>
+		<p>Help more people get involved in community life.</p>
+
+        <details>
+        	<summary>Explore community inclusion </summary>
+        	<p>Zayed Authority for People of Determination provides rehabilitation and inclusion services in Abu Dhabi.</p>
+
+
+        	<a href="https://za.gov.ae/en/About-ZHO/About-Us"
+                data-resource-id="zayed-authority">
+        		Visit Zayed Authority for People of Determination
+        	</a>
+         </details>
+     </article>
+ </div>
+</section>
+</main>
+
+<footer>
+	<p>Athar  · Give With Purpose</p>
+</footer>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+	const filters = document.getElementById("cause-filters");
+	const causeList = document.getElementById("cause-cards");
+	const resultCount = document.getElementById("cause-count");
+	const buttons = filters.querySelectorAll("button[data-category]");
+	const cards = causeList.querySelectorAll("article[data-cause]");
+	
+	function updateResults(category){
+		let count = 0;
+
+		for(const button of buttons){
+			const isSelected = button.dataset.category == category;
+			button.setAttribute("aria-pressed",String(isSelected));
+		}
+
+       
+
+       for(const card of cards){
+       	const matchesCategory = 
+
+       	category == "" || card.dataset.cause === category;
+
+       	card.hidden = !matchesCategory;
+
+       	if(matchesCategory){
+       		count++
+       	}
+
+       }
+
+
+       if(count == 1){
+
+       	resultCount.textContent = "1 cause found";
+       }else{
+       	resultCount.textContent = count + " causes found";
+       }
+      }
+
+       for(const button of buttons){ 
+       	button.addEventListener("click", function(){
+       		updateResults(button.dataset.category);
+       	});
+       }
+
+
+       for(const card of cards){
+       	const details = card.querySelector("details");
+
+       	details.addEventListener("toggle" , function(){
+       		if(details.open && typeof markExplored == "function"){
+       			markExplored("cause-" + card.dataset.cause);
+       		}
+       	});
+    }
+
+
+     causeList.addEventListener("click",function(event){
+     	const link = event.target.closest("a[data-resource-id]");
+
+     	if(link && typeof awardOnce == "function"){
+     		awardOnce("resource-" + link.dataset.resourceId,5);
+     	}
+     });
+
+     filters.hidden = false;
+     updateResults("");
+
+     });
+  </script>
+</body>
+</html>
+    
+       
+	
+
+
