@@ -985,6 +985,11 @@ textarea:focus {
 
 /*16. SHARED NAVIGATION */
 
+/* =========================================================
+   16. SHARED NAVIGATION
+   works with the older teammate pages too
+   ========================================================= */
+
 .nav {
     min-height: 82px;
 
@@ -1028,6 +1033,16 @@ textarea:focus {
     display: block;
 
     object-fit: contain;
+}
+
+.nav .brand:not(:has(img)) {
+    color: var(--emerald);
+
+    font-family: 'Manrope', sans-serif;
+    font-size: 22px;
+    font-weight: 800;
+
+    line-height: 1;
 }
 
 .nav .link {
@@ -2687,8 +2702,10 @@ body {
     max-width: 100%;
 }
 
-
-/* volunteer page web */
+/* =========================================================
+   VOLUNTEER PAGE
+   extra styling for the volunteer finder and resource cards
+   ========================================================= */
 
 #volunteer-filters {
     margin: 28px 0 45px;
@@ -2919,7 +2936,9 @@ body > footer p {
 }
 
 
-/* volunteer page*/
+/* =========================================================
+   VOLUNTEER PAGE - MOBILE
+   ========================================================= */
 
 @media (max-width: 900px) {
 
