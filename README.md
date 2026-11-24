@@ -1,5 +1,7 @@
 # Athar
 
+Website Link: https://khadeejashaikh.github.io/Athar/
+
 A UAE-focused website that helps people find safe, official ways to donate money, donate items, or volunteer, with a points and levels game. Built with HTML, CSS and JavaScript.
 
 Athar does not collect donations. It only links to official resources.
