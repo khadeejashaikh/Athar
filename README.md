@@ -68,12 +68,12 @@ Saved data uses the browser key `athar_points`. Please don't use that key for an
 Each member ticks their own boxes.
 
 ### Member 1: [Mariam]
-- [ ] Shared navigation and design (`css/style.css`)
-- [ ] Home page
-- [ ] Profile form and personalised welcome
-- [ ] Giver quiz
-- [ ] Points connected (`athar.js` added, level chip in nav)
-- [ ] Tested on phone and laptop
+- [x] Shared navigation and design (`css/style.css`)
+- [x] Home page
+- [x] Profile form and personalised welcome
+- [x] Giver quiz
+- [x] Points connected (`athar.js` added, level chip in nav)
+- [x] Tested on phone and laptop
 
 ### Member 2: [Khadeeja]
 - [x] Points, levels and badges (`js/athar.js`)
