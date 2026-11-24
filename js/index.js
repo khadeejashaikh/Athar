@@ -173,8 +173,7 @@ function showToast(message) {
 }
 
 
-// the new navigation does not use the old mobile menu button,
-// so this section only runs if a menu button exists
+// this section only runs if a menu button exists
 const menuButton = document.querySelector('#menu-button');
 const mainNav = document.querySelector('#main-nav');
 
@@ -326,7 +325,7 @@ function renderQuiz() {
         content.innerHTML = `
             <div class="quiz-top">
                 <div class="logo">
-                    <img src="logo.png" alt="ATHAR - Give With Purpose">
+                    <img src="images/logo.png" alt="ATHAR - Give With Purpose">
                 </div>
 
                 <span>
