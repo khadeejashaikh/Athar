@@ -2686,3 +2686,270 @@ body {
 .page-hero {
     max-width: 100%;
 }
+
+
+/* volunteer page web */
+
+#volunteer-filters {
+    margin: 28px 0 45px;
+    padding: 28px;
+    border: 1px solid var(--line);
+    border-radius: 17px;
+    background: var(--white);
+
+    display: grid;
+    grid-template-columns: 1fr 1fr auto;
+    gap: 18px;
+    align-items: end;
+
+    box-shadow: 0 10px 30px rgba(35, 50, 44, 0.05);
+}
+
+#volunteer-filters label {
+    margin-bottom: 0;
+}
+
+#volunteer-filters select {
+    margin-top: 8px;
+    height: 46px;
+}
+
+#volunteer-filters button {
+    height: 46px;
+
+    padding: 0 18px;
+
+    border: 1px solid #b7c7c0;
+    border-radius: 9px;
+
+    background: transparent;
+    color: var(--emerald);
+
+    font-size: 13px;
+    font-weight: 700;
+}
+
+#volunteer-filters button:hover {
+    background: var(--soft);
+    border-color: var(--emerald);
+}
+
+
+/* volunteer page heading */
+
+#finder-title,
+#resources-title {
+    color: var(--dark);
+}
+
+#finder-title {
+    margin-bottom: 10px;
+}
+
+#resources-title {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+
+/* result counter */
+
+#result-count {
+    margin: 25px 0 18px;
+
+    color: var(--emerald);
+
+    font-size: 12px;
+    font-weight: 700;
+
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+
+/* resource cards */
+
+#volunteer-resources {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 18px;
+
+    margin-bottom: 70px;
+}
+
+#volunteer-resources article {
+    min-height: 235px;
+
+    padding: 26px;
+
+    border: 1px solid var(--line);
+    border-radius: 16px;
+
+    background: var(--white);
+
+    display: flex;
+    flex-direction: column;
+
+    box-shadow: 0 10px 30px rgba(35, 50, 44, 0.05);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        border-color 0.2s ease;
+}
+
+#volunteer-resources article:hover {
+    transform: translateY(-4px);
+
+    border-color: #c6d5ce;
+
+    box-shadow: 0 16px 35px rgba(35, 50, 44, 0.09);
+}
+
+
+/* card title */
+
+#volunteer-resources article h3 {
+    margin: 0 0 12px;
+
+    color: var(--emerald);
+
+    font-family: 'Manrope', sans-serif;
+
+    font-size: 19px;
+    line-height: 1.25;
+}
+
+
+/* card paragraphs */
+
+#volunteer-resources article p {
+    margin-bottom: 9px;
+
+    color: var(--muted);
+
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+
+/* first paragraph = location */
+
+#volunteer-resources article p:first-of-type {
+    color: #8a6b35;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+
+/* links */
+
+#volunteer-resources article a {
+    margin-top: auto;
+
+    padding-top: 18px;
+
+    color: var(--emerald);
+
+    font-size: 13px;
+    font-weight: 700;
+
+    text-decoration: none;
+}
+
+#volunteer-resources article a::after {
+    content: "  →";
+
+    transition: margin-left 0.2s ease;
+}
+
+#volunteer-resources article a:hover {
+    text-decoration: none;
+}
+
+#volunteer-resources article a:hover::after {
+    margin-left: 5px;
+}
+
+
+/* no results */
+
+#empty-results {
+    margin: 20px 0 60px;
+
+    padding: 25px;
+
+    border: 1px dashed #c8d2cd;
+    border-radius: 12px;
+
+    background: #f1f3ee;
+
+    color: var(--muted);
+
+    text-align: center;
+}
+
+
+/* footer */
+
+body > footer {
+    margin-top: 70px;
+
+    padding: 30px 4.5%;
+
+    border-top: 1px solid rgba(15, 90, 70, 0.1);
+
+    background: var(--dark);
+
+    color: #bdcdc7;
+
+    text-align: center;
+}
+
+body > footer p {
+    margin: 0;
+
+    font-size: 12px;
+}
+
+
+/* volunteer page*/
+
+@media (max-width: 900px) {
+
+    #volunteer-filters {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #volunteer-filters button {
+        width: 100%;
+    }
+
+    #volunteer-resources {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    #volunteer-filters {
+        grid-template-columns: 1fr;
+
+        padding: 20px;
+    }
+
+    #volunteer-resources {
+        grid-template-columns: 1fr;
+    }
+
+    #volunteer-resources article {
+        min-height: 210px;
+    }
+}
