@@ -3043,8 +3043,8 @@ main > h1:first-child {
 
 
 .badge .btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
 }
