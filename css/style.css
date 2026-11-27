@@ -2888,6 +2888,19 @@ html {
   }
 }
 
+@media (min-width: 821px) {
+  .chip,
+  .level-pill {
+    width: 124px;
+    min-width: 124px;
+    height: 46px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
 main > h1:first-child {
   margin-top: 40px;
 }
