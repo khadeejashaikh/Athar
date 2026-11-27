@@ -2901,6 +2901,32 @@ html {
   }
 }
 
+/* arrows: sit centered next to the text */
+[data-icon] {
+  display: inline-flex;
+  align-items: center;
+  line-height: 0;
+}
+
+.section-title .btn span {
+  display: inline-flex;
+  margin: 0;
+  color: inherit;
+  letter-spacing: 0;
+}
+
+/* "Explore" links on the cause cards */
+.cause-card .explore-cause {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 5px 0;
+  color: var(--emerald);
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
 main > h1:first-child {
   margin-top: 40px;
 }
