@@ -2805,3 +2805,47 @@ body > footer p {
     }
 
 }
+
+/* make the inner-page header match the home page header */
+.nav {
+  height: 82px;
+  min-height: 0;
+  align-items: stretch;
+}
+
+.nav .brand {
+  align-self: center;
+}
+
+.nav .link {
+  align-items: center;
+}
+
+.chip {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  min-width: 100px;
+  margin-left: 12px;
+  padding: 6px 10px;
+  letter-spacing: 0;
+}
+
+.chip span {
+  color: var(--emerald);
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+.chip b {
+  margin-top: 2px;
+  font-size: 10px;
+  color: var(--charcoal);
+}
+
+@media (max-width: 560px) {
+  .chip {
+    display: none;
+  }
+}

@@ -136,8 +136,14 @@
     var el = document.getElementById("athar-level");
     if (!el) return;
     var i = getLevelInfo();
-    el.textContent = i.name + " · " + i.points + " pts";
-  }
+    el.innerHTML = "";
+    var top = document.createElement("span");
+    top.textContent = "LEVEL " + (i.index + 1) + " · " + i.name.toUpperCase();
+    var bottom = document.createElement("b");
+    bottom.textContent = i.points + " POINTS";
+    el.appendChild(top);
+    el.appendChild(bottom);
+}
   document.addEventListener("DOMContentLoaded", updateLevelChip);
 
   /* ---------- make the functions available to every page ---------- */
