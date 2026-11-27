@@ -2980,3 +2980,63 @@ footer {
 main > h1:first-child {
   margin-top: 40px;
 }
+
+
+.about-image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0 45px;
+}
+
+.about-image img {
+    width: min(850px, 90%);
+    height: auto;
+    display: block;
+    object-fit: contain;
+}
+
+
+.zakat-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.zakat-content {
+    flex: 1;
+}
+
+.zakat-image {
+    flex: 0 0 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.zakat-image img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    display: block;
+}
+
+/* mobile */
+@media (max-width: 700px) {
+    .zakat-card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .zakat-image {
+        width: 100%;
+        flex: none;
+        justify-content: center;
+    }
+
+    .zakat-image img {
+        max-width: 240px;
+    }
+}
