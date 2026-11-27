@@ -36,6 +36,8 @@
     <span class="chip" id="athar-level" aria-label="Your level"></span>
   </nav>
 
+   </nav>
+
   <main>
     <h1>Donate Items</h1>
     <p class="lead">Good items help families in need, but only if they reach a licensed organisation. Build a checklist before you pack.</p>
@@ -53,8 +55,12 @@
         <label><input type="checkbox" name="cat" value="Non-perishable food"> Non-perishable food</label>
         <label><input type="checkbox" name="cat" value="Household items"> Household items</label>
       </div>
+
       <button class="btn" id="build" type="button">Build my checklist</button>
-      <p class="error" id="err" role="alert"></p>
+      
+	  
+	  
+	  <p class="error" id="err" role="alert"></p>
       <div id="out" hidden>
         <h3>Your checklist</h3>
         <ul id="list" class="plain"></ul>
@@ -64,11 +70,12 @@
     <section class="card" aria-labelledby="wg-h">
       <h2 id="wg-h">Where to give</h2>
       <ul class="badges">
-               <li class="badge"><strong>Emirates Red Crescent</strong><p>Check their website for collection points and what they accept now.</p><br> <a class="btn small where-btn" href="https://www.rcuae.ae" target="_blank" rel="noopener noreferrer">Visit website</a>
+        <li class="badge"><strong>Emirates Red Crescent</strong><p>Check their website for collection points and what they accept now.</p><br> <a class="btn small where-btn" href="https://www.rcuae.ae" target="_blank" rel="noopener noreferrer">Visit website</a>
         <li class="badge"><strong>Official charity list</strong><p>Other licensed organisations that take items, on the u.ae portal.</p><br><a class="btn small where-btn" href="https://u.ae/en/information-and-services/charity-and-humanitarian-work/ways-of-doing-charity-in-the-uae" target="_blank" rel="noopener noreferrer">View official list</a>
       </ul>
     </section>
-    <p class="note">Athar does not collect items or money. Call or check the charity's website first, because needs change.</p>  </main>
+    <p class="note">Athar does not collect items or money. Call or check the charity's website first, because needs change.</p>  
+	</main>
 
   <script src="js/athar.js"></script>
 <script>
