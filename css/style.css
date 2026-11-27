@@ -2826,7 +2826,7 @@ body > footer p {
   display: flex;
   flex-direction: column;
   min-width: 100px;
-  margin-left: -36px;
+  margin-left: 12px;
   padding: 6px 10px;
   letter-spacing: 0;
 }
@@ -2862,8 +2862,17 @@ html {
   }
 }
 
-@media (min-width: 1101px) {
+/* put the links right next to the points box on every page */
+@media (min-width: 821px) {
+  .header-inner {
+    gap: 0;
+  }
+
+  .header-inner .avatar {
+    display: none;
+  }
+
   .user-nav {
-    margin-left: -94px;
+    margin-left: 12px;
   }
 }
