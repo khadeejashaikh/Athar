@@ -3040,3 +3040,11 @@ main > h1:first-child {
         max-width: 240px;
     }
 }
+
+
+.badge .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
