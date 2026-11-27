@@ -2876,3 +2876,7 @@ html {
     margin-left: 12px;
   }
 }
+
+main > h1:first-child {
+  margin-top: 40px;
+}

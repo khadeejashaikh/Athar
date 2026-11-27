@@ -4,22 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>About | Athar</title>
-  <!-- Swap to css/style.css once Member 1 publishes the shared design -->
   <link rel="stylesheet" href="css/style.css">
-  <style>
-    .badge{color:var(--ink)}
-    .badge p{margin:.2rem 0 .5rem;color:var(--muted)}
-    a.btn{display:inline-block;text-decoration:none}
-    ul.plain{padding-left:1.2rem;margin:.5rem 0 0}
-    .picks{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:.6rem;margin:.75rem 0 1rem}
-    .picks label{display:flex;gap:.5rem;align-items:center;padding:.6rem .8rem;background:#F3F1EA;border:2px solid var(--line);border-radius:12px;cursor:pointer}
-    .picks label:has(input:checked){background:var(--mint);border-color:var(--emerald)}
-    .picks input{accent-color:var(--emerald)}
-    .stack{display:grid;gap:.75rem}
-    textarea{font:1rem system-ui,sans-serif;padding:.55rem .6rem;border:1px solid var(--line);border-radius:8px;width:100%}
-    input[type=email]{font:1rem system-ui,sans-serif;padding:.55rem .6rem;border:1px solid var(--line);border-radius:8px;background:#fff}
-    @media print{.nav,.btn,.note{display:none}}
-  </style>
 </head>
 <body>
   <nav class="nav" aria-label="Main">
@@ -47,6 +32,19 @@
       <p class="note">Points, badges and your giving log are self-reported and stay in your own browser.</p>
     </section>
 
+    <section class="card" aria-labelledby="r-h">
+      <h2 id="r-h">Official resource links</h2>
+      <p>These are starting points. Always confirm details on the organisation's own website. Athar does not endorse or certify any organisation.</p>
+      <ul class="plain">
+        <li><a href="https://u.ae/en/information-and-services/charity-and-humanitarian-work/ways-of-doing-charity-in-the-uae" target="_blank" rel="noopener">UAE Government: Ways of doing charity in the UAE</a></li>
+        <li><a href="https://www.volunteers.ae/en/" target="_blank" rel="noopener">Volunteers.ae</a></li>
+        <li><a href="https://www.emiratesrc.ae/" target="_blank" rel="noopener">Emirates Red Crescent</a></li>
+        <li><a href="https://www.dubaicares.ae/" target="_blank" rel="noopener">Dubai Cares</a></li>
+        <li><a href="https://www.shjc.sharjah.ae/" target="_blank" rel="noopener">Sharjah Charity International</a></li>
+        <li><a href="https://www.jood.ae/" target="_blank" rel="noopener">Jood</a></li>
+      </ul>
+    </section>
+
     <section class="card" aria-labelledby="f-h">
       <h2 id="f-h">Send us feedback</h2>
       <form class="stack" id="fb" novalidate>
@@ -56,7 +54,7 @@
         <div><button class="btn" type="submit">Send feedback</button></div>
       </form>
       <p class="error" id="err" role="alert"></p>
-      <p class="note" id="thanks" hidden>Thank you! Your feedback was checked. This demo form does not send anything anywhere.</p>
+      <p class="note" id="thanks" hidden>Thank you! Your message looks good. This demo form does not send anything anywhere.</p>
     </section>
   </main>
 
