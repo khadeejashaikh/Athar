@@ -2938,6 +2938,45 @@ html {
   filter: brightness(1.06);
 }
 
+/* tighter footer, no stretched box */
+footer {
+  margin-top: 80px;
+}
+
+.footer-main {
+  padding: 45px 0 30px;
+  gap: 40px;
+  align-items: start;
+}
+
+.footer-note {
+  padding: 16px 18px;
+}
+
+.footer-note p {
+  margin-top: 8px;
+}
+
+.footer-bottom {
+  padding: 16px 0;
+}
+
+/* logo sits on a cream tile so it is readable on the dark footer */
+.footer-main .logo {
+  display: inline-flex;
+  padding: 10px 16px;
+  background: var(--cream);
+  border-radius: 12px;
+}
+
+.footer-main .logo img {
+  width: 150px;
+}
+
+.footer-main > div:first-child p {
+  margin-top: 16px;
+}
+
 main > h1:first-child {
   margin-top: 40px;
 }
