@@ -2927,6 +2927,17 @@ html {
   text-decoration: none;
 }
 
+/* journey card button: gold so it stands out on the dark card */
+.journey-card .btn-secondary {
+  background: var(--gold);
+  border-color: var(--gold);
+  color: #19372e;
+}
+
+.journey-card .btn-secondary:hover {
+  filter: brightness(1.06);
+}
+
 main > h1:first-child {
   margin-top: 40px;
 }

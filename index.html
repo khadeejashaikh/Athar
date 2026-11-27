@@ -611,10 +611,30 @@
 <script>
   function syncHeader() {
     var i = getLevelInfo();
+    var d = getData();
+
+    // header box
     document.getElementById("level-label").textContent =
       "LEVEL " + (i.index + 1) + " · " + i.name.toUpperCase();
     document.getElementById("header-points").textContent =
       i.points + " POINTS";
+
+    // journey card
+    var lvl = document.getElementById("journey-level");
+    var pts = document.getElementById("journey-points");
+    var bar = document.getElementById("journey-progress");
+    if (lvl) lvl.textContent = i.name;
+    if (pts) pts.textContent = i.nextAt
+      ? i.points + " / " + i.nextAt + " points"
+      : i.points + " points";
+    if (bar) bar.style.width = i.percent + "%";
+
+    // real streak and badge count (no more made-up numbers)
+    var streak = 0;
+    for (var k = 0; k < 7 && d.challenge[k]; k++) streak++;
+    var stats = document.querySelectorAll(".stat-row b");
+    if (stats[0]) stats[0].textContent = streak;
+    if (stats[1]) stats[1].textContent = d.badges.length;
   }
   syncHeader();
   window.addEventListener("load", syncHeader);
