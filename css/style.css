@@ -2862,9 +2862,19 @@ html {
   }
 }
 
-/* Home's menu is also class="nav": remove the extra padding so it matches the other pages */
+/* make the Home header match the inner-page header */
 @media (min-width: 821px) {
-  .header-inner nav.nav {
+  .site-header .header-inner {
+    gap: 0;
+    padding: 0 4.5%;
+  }
+
+  .site-header .logo {
+    margin-right: auto;
+  }
+
+  .site-header .header-inner nav.nav {
+    margin-left: 0;
     padding: 0;
     height: auto;
     min-height: 0;
@@ -2873,16 +2883,8 @@ html {
     backdrop-filter: none;
   }
 
-  .header-inner {
-    gap: 12px;
-  }
-
-  .header-inner .avatar {
-    display: none;
-  }
-
-  .user-nav {
-    margin-left: 0;
+  .site-header .user-nav {
+    margin-left: 12px;
   }
 }
 
