@@ -2826,7 +2826,7 @@ body > footer p {
   display: flex;
   flex-direction: column;
   min-width: 100px;
-  margin-left: 114px;
+  margin-left: -36px;
   padding: 6px 10px;
   letter-spacing: 0;
 }
@@ -2859,5 +2859,11 @@ html {
 @media (max-width: 1100px) {
   .chip {
     margin-left: 12px;
+  }
+}
+
+@media (min-width: 1101px) {
+  .user-nav {
+    margin-left: -94px;
   }
 }
