@@ -2826,7 +2826,7 @@ body > footer p {
   display: flex;
   flex-direction: column;
   min-width: 100px;
-  margin-left: 12px;
+  margin-left: 114px;
   padding: 6px 10px;
   letter-spacing: 0;
 }
@@ -2847,5 +2847,17 @@ body > footer p {
 @media (max-width: 560px) {
   .chip {
     display: none;
+  }
+}
+
+/* keep the scrollbar space on every page so nothing shifts sideways */
+html {
+  overflow-y: scroll;
+}
+
+/* on smaller screens, don't push the chip so far */
+@media (max-width: 1100px) {
+  .chip {
+    margin-left: 12px;
   }
 }
