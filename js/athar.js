@@ -133,17 +133,28 @@
   /* ---------- level chip for the navigation bar ----------
      Any element with id="athar-level" shows e.g. "Sprout · 60 pts"  */
   function updateLevelChip() {
-    var el = document.getElementById("athar-level");
-    if (!el) return;
-    var i = getLevelInfo();
-    el.innerHTML = "";
+  var i = getLevelInfo();
+  var levelText = "LEVEL " + (i.index + 1) + " · " + i.name.toUpperCase();
+  var pointsText = i.points + " POINTS";
+
+  // inner pages: <span id="athar-level">
+  var chip = document.getElementById("athar-level");
+  if (chip) {
+    chip.innerHTML = "";
     var top = document.createElement("span");
-    top.textContent = "LEVEL " + (i.index + 1) + " · " + i.name.toUpperCase();
+    top.textContent = levelText;
     var bottom = document.createElement("b");
-    bottom.textContent = i.points + " POINTS";
-    el.appendChild(top);
-    el.appendChild(bottom);
-}
+    bottom.textContent = pointsText;
+    chip.appendChild(top);
+    chip.appendChild(bottom);
+  }
+
+  // Home page header
+  var label = document.getElementById("level-label");
+  var pts = document.getElementById("header-points");
+  if (label) label.textContent = levelText;
+  if (pts) pts.textContent = pointsText;
+  }
   document.addEventListener("DOMContentLoaded", updateLevelChip);
 
   /* ---------- make the functions available to every page ---------- */

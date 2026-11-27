@@ -2862,10 +2862,19 @@ html {
   }
 }
 
-/* put the links right next to the points box on every page */
+/* Home's menu is also class="nav": remove the extra padding so it matches the other pages */
 @media (min-width: 821px) {
+  .header-inner nav.nav {
+    padding: 0;
+    height: auto;
+    min-height: 0;
+    border-bottom: 0;
+    background: transparent;
+    backdrop-filter: none;
+  }
+
   .header-inner {
-    gap: 0;
+    gap: 12px;
   }
 
   .header-inner .avatar {
@@ -2873,7 +2882,7 @@ html {
   }
 
   .user-nav {
-    margin-left: 12px;
+    margin-left: 0;
   }
 }
 
